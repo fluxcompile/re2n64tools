@@ -4,86 +4,35 @@
 *.z64
 *.rom
 
-# Extracted asset directories
-blobs/
+# Extracted assets
 extracted_assets/
-assets/
-output/
-temp/
-
-# Binary files
 *.bin
-*.dat
-*.raw
 
 # Python
 __pycache__/
 *.py[cod]
-*$py.class
-*.so
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
+*.pyc
 
 # Virtual environments
 venv/
-env/
-ENV/
-env.bak/
-venv.bak/
 
 # IDE
 .vscode/
 .idea/
-*.swp
-*.swo
-*~
 
 # OS
 .DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
 Thumbs.db
 
-# Logs and temporary files
+# Temporary files
 *.log
 *.tmp
-*.temp
-temp/
-tmp/
 
 # Analysis results
-analysis_results/
-scan_results/
 *.txt
-!requirements.txt
 !README.txt
 
-# Large files that shouldn't be in version control
+# Archives and backups
 *.zip
-*.rar
-*.7z
-*.tar.gz
-*.tar.bz2
-
-# Backup files
 *.bak
-*.backup
 *~

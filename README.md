@@ -20,32 +20,6 @@ This tool only works with the specific ROM version listed above. Other dumps (.v
 python extract_from_table.py re2.z64 file_table.json extracted_assets
 ```
 
-## File Format
+## Notes
 
-### Video Data
-
-The ROM contains 271 videos with addresses ranging from `0x01440F48` to `0x2B7D8E9`. These are M2V (MPEG-2 video) files containing cutscenes and FMVs.
-
-The ROM stores videos in a simple format:
-
-1. **Video data** (M2V file)
-2. **8-byte header** containing:
-   - Constant: `0x00010000` (4 bytes, big-endian)
-   - Previous file size: How big the video was (4 bytes, big-endian)
-
-This repeats for all 271 videos. The overall structure looks like:
-
-```
-[Video 0 data] [0x00010000] [size of Video 0]
-[Video 1 data] [0x00010000] [size of Video 1]
-[Video 2 data] [0x00010000] [size of Video 2]
-...
-```
-
-For example, video 0 (`annet_ab22.m2v`):
-
-```
-[Video data (273,508 bytes)] [0x00010000] [0x00042C04]
-```
-
-Where `0x00042C04` (273,508 in decimal) is the size of the video data.
+See `NOTES.md` for technical documentation and research findings.
