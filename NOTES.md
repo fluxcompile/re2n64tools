@@ -4,12 +4,12 @@
 
 | Address Range         | Size (bytes) | Purpose                      | Status   |
 | --------------------- | ------------ | ---------------------------- | -------- |
+| 0x0142CFFE–0x01434BE8 | 31,723       | Text Strings (16 identified) | 🔍 Partial |
 | 0x01440F48–0x02B7D8E9 | 24,365,473   | M2V Video Files (271 files)  | ✅ Mapped |
-| 0x0142CFFE–0x01434BE8 | 15,754       | Text Strings (16 identified) | 🔍 Partial |
+| 0x02BDEFB2-0x03AF17FD | 15,804,492   | JPEG files (1227 files)      | ✅ Mapped |
 | 0x00000000–0x03FFFFFF | 67,108,864   | Total ROM Size (64 MB)       | -        |
 
-**Mapped**: 24,381,227 bytes (~36.3%)
-**Unmapped**: 42,727,637 bytes (~63.7%)
+**Mapped**: 40,201,688 bytes (~59.9%)
 
 ## Video File Format
 
@@ -40,6 +40,27 @@ This pattern repeats for all 271 videos, producing a sequence like:
 Where `0x00042C04` (273,508 in decimal) is the size of the video data.
 
 Together, the 271 video files account for ~24.3 MB of the ROM (about 36% of the total 64 MB).
+
+## Image Data
+
+The ROM contains 1,227 image files located between `0x02BDEFB2-0x03AF17FD`. Most of these images are pre-rendered backgrounds.
+
+Each image is stored with a simple repeating structure:
+
+1. **Image data** (JPEG)  
+2. **8-byte footer** consisting of:  
+   - A constant value: `0x00010000` (4 bytes, big-endian)  
+   - The size of the preceding image file (4 bytes, big-endian)  
+
+This pattern repeats for all 1,227 images, producing a sequence like:
+
+```
+[Image 0 data] [0x00010000] [size of Image 0]
+[Image 1 data] [0x00010000] [size of Image 1]
+[Image 2 data] [0x00010000] [size of Image 2]
+...
+```
+Together, the 1,227 image files account for ~15.8 MB of the ROM (about 23.5% of the total 64 MB).
 
 ## String Header Analysis (Work in Progress)
 
