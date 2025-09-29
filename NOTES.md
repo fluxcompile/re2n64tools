@@ -2,65 +2,45 @@
 
 ## ROM Data Mapping Summary
 
-| Address Range         | Size (bytes) | Purpose                      | Status   |
-| --------------------- | ------------ | ---------------------------- | -------- |
-| 0x0142CFFE–0x01434BE8 | 31,723       | Text Strings (16 identified) | 🔍 Partial |
-| 0x01440F48–0x02B7D8E9 | 24,365,473   | M2V Video Files (271 files)  | ✅ Mapped |
-| 0x02BDEFB2-0x03AF17FD | 15,804,492   | JPEG files (1227 files)      | ✅ Mapped |
-| 0x00000000–0x03FFFFFF | 67,108,864   | Total ROM Size (64 MB)       | -        |
+| Address Range         | Purpose                      | Status   |
+| --------------------- | ---------------------------- | -------- |
+| 0x0142CFFE–0x014350CB | Text Strings                 | Partial |
+| 0x01440F38–0x02B7D8E9 | M2V Video Files              | ✅ Mapped |
+| 0x02B7D8EA-0x02BDEFB1 | Compressed Data              | Parital |
+| 0x02BDEFB2-0x03AF17FD | JPEG files                   | ✅ Mapped |
+| 0x03AF17FE-0x03B27C93 | Compressed Data              | Partial |
+| 0x03FD0DF6-0x03FFFFFF | Empty Data                   | ✅ Mapped |
 
-**Mapped**: 40,201,688 bytes (~59.9%)
+**Mapped**: 45,953,026 bytes (~68.5%)
+**Total**: 67,108,864 bytes (64 MB)
 
-## Video File Format
+## File Formats
 
-The ROM contains 271 video files located between `0x01440F48` and `0x02B7D8E9`. These are M2V (MPEG-2 video) files used for cutscenes and FMVs.
+**Videos (M2V)**: `0x01440F38-0x02B7D8E9` - Raw MPEG-2 video files with 8-byte footers (`0x00010000` + size) after each file
+**Images (JPEG)**: `0x02BDEFB2-0x03AF17FD` - JPEG files with 8-byte footers (`0x00010000` + size) after each file
+**Compressed Data**: `0x03AF17FE-0x03B27C93` - Zlib-compressed blocks with various content types
 
-Each video is stored with a simple repeating structure:
+## Compressed Data Blocks
 
-1. **Video data** (raw M2V stream)  
-2. **8-byte footer** consisting of:  
-   - A constant value: `0x00010000` (4 bytes, big-endian)  
-   - The size of the preceding video file (4 bytes, big-endian)  
+The ROM contains numerous compressed text blocks using zlib compression. 
 
-This pattern repeats for all 271 videos, producing a sequence like:
+Each compressed text block follows this pattern:
 
-```
-[Video 0 data] [0x00010000] [Size of Video 0]
-[Video 1 data] [0x00010000] [Size of Video 1]
-[Video 2 data] [0x00010000] [Size of Video 2]
-...
-```
+1. **68 DE marker** (2 bytes) - identifies the start of a compressed block
+2. **Compressed data** (zlib format) - contains the actual text content
+3. **00 10 00 00 terminator** (4 bytes) - marks block as compressed
+4. **Size field** (4 bytes, big-endian) - contains the decompressed size of the block
 
-**Example:** Video 0 (`annet_ab22.m2v`) is 273,508 bytes long:
+The compressed blocks contain various types of text content. Some blocks also contain binary data (images, audio, etc.) which are dumped to separate files during extraction.
 
-```
-[Video data (273,508 bytes)] [0x00010000] [0x00042C04]
-```
+### Images
 
-Where `0x00042C04` (273,508 in decimal) is the size of the video data.
+All image assets are now cataloged in `file_table.json` under the `compressed_images` section. This includes:
+- 24-bit images (logos, etc.)
+- 16-bit palette-based images (UI screens, menus)
+- Complete metadata (addresses, dimensions, formats, sizes)
 
-Together, the 271 video files account for ~24.3 MB of the ROM (about 36% of the total 64 MB).
-
-## Image Data
-
-The ROM contains 1,227 image files located between `0x02BDEFB2-0x03AF17FD`. Most of these images are pre-rendered backgrounds.
-
-Each image is stored with a simple repeating structure:
-
-1. **Image data** (JPEG)  
-2. **8-byte footer** consisting of:  
-   - A constant value: `0x00010000` (4 bytes, big-endian)  
-   - The size of the preceding image file (4 bytes, big-endian)  
-
-This pattern repeats for all 1,227 images, producing a sequence like:
-
-```
-[Image 0 data] [0x00010000] [size of Image 0]
-[Image 1 data] [0x00010000] [size of Image 1]
-[Image 2 data] [0x00010000] [size of Image 2]
-...
-```
-Together, the 1,227 image files account for ~15.8 MB of the ROM (about 23.5% of the total 64 MB).
+Use `extract_from_table.py` to extract images from the file table.
 
 ## String Header Analysis (Work in Progress)
 
@@ -92,18 +72,6 @@ Preliminary findings suggest that text entries follow a consistent header format
 | 0x01434BD5  | 0x01434BD8  | F7 20 0D     | #FILE 15/16             |
 | 0x01434BE5  | 0x01434BE8  | F5 20 09     | WANT AD                 |
 
-### ID Value Patterns
-
-Based on the data above, different ID values appear to correlate with content types:
-
-- **E7**: Short film labels (FILM A, FILM B, FILM C)
-- **E9**: Short identifiers (RECRUIT)
-- **F5**: Advertisements/notices (WANT AD)
-- **F7**: Personal memos and file references (Memo To Leon, #FILE 15/16)
-- **F8**: Reports, diaries, notes (CHRIS'S DIARY, MAIL TO THE CHIEF, PATROL REPORT, CHIEF'S DIARY, P-EPSILON GAS)
-- **F9**: Operation reports (OPERATION REPORT)
-- **FA**: Police/memorandum entries (Police Memorandum, USER REGISTRATION)
-- **FD**: Investigative reports (INVESTIGATIVE REPORT ON)
 
 ## System / Debug Strings
 
