@@ -36,3 +36,5 @@ Thumbs.db
 *.zip
 *.bak
 *~
+
+build/
