@@ -2,23 +2,29 @@
 
 ## ROM Data Mapping Summary
 
-| Address Range         | Purpose                      | Status   |
-| --------------------- | ---------------------------- | -------- |
-| 0x0142CFFE–0x014350CB | Text Strings                 | Partial |
-| 0x01440F38–0x02B7D8E9 | M2V Video Files              | ✅ Mapped |
-| 0x02B7D8EA-0x02BDEFB1 | Compressed Data              | Parital |
-| 0x02BDEFB2-0x03AF17FD | JPEG files                   | ✅ Mapped |
-| 0x03AF17FE-0x03B27C93 | Compressed Data              | Partial |
-| 0x03FD0DF6-0x03FFFFFF | Empty Data                   | ✅ Mapped |
-
-**Mapped**: 45,953,026 bytes (~68.5%)
-**Total**: 67,108,864 bytes (64 MB)
+| Address Range         | Purpose                      |
+| --------------------- | ---------------------------- |
+| 0x00000000-0x000D8324 | Code                         |
+| 0x000D8324-0x00338FE1 | Compressed data              |
+| 0x0034C18B–0x00B2C346 | Unknown binary data          |
+| 0x00B63106-0x00B73FB3 | Compressed data              |
+| 0x00BF20FD-0x01350E80 | Unknown binary data          |
+| 0x01350E81-0x014030F6 | Uncompressed data            |
+| 0x0140ED84-0x0142CFE9 | Compressed data              |
+| 0x0142CFFE–0x014350CB | Text Strings                 |
+| 0x01440F38–0x02B7D8E9 | M2V Video Files              |
+| 0x02B7D8EA-0x02BDEFB1 | Compressed Data              |
+| 0x02BDEFB2-0x03AF17FD | JPEG files                   |
+| 0x03AF17FE-0x03FD0DF5 | Compressed Data              |
+| 0x03FD0DF6-0x03FFFFFF | Empty Data                   |
 
 ## File Formats
 
-**Videos (M2V)**: `0x01440F38-0x02B7D8E9` - Raw MPEG-2 video files with 8-byte footers (`0x00010000` + size) after each file
-**Images (JPEG)**: `0x02BDEFB2-0x03AF17FD` - JPEG files with 8-byte footers (`0x00010000` + size) after each file
-**Compressed Data**: `0x03AF17FE-0x03B27C93` - Zlib-compressed blocks with various content types
+* **Compressed Data**: Zlib-compressed blocks with various content types
+* **Uncompressed Data**: Raw files with 8-byte footers (`0x00010000` + size) after each file
+  * **Videos (M2V)**: `0x01440F38-0x02B7D8E9` - Raw MPEG-2 video files
+  * **Images (JPEG)**: `0x02BDEFB2-0x03AF17FD` - JPEG files
+  * **Other Files**: Various uncompressed data scattered throughout unmapped regions
 
 ## Compressed Data Blocks
 
@@ -32,46 +38,6 @@ Each compressed text block follows this pattern:
 4. **Size field** (4 bytes, big-endian) - contains the decompressed size of the block
 
 The compressed blocks contain various types of text content. Some blocks also contain binary data (images, audio, etc.) which are dumped to separate files during extraction.
-
-### Images
-
-All image assets are now cataloged in `file_table.json` under the `compressed_images` section. This includes:
-- 24-bit images (logos, etc.)
-- 16-bit palette-based images (UI screens, menus)
-- Complete metadata (addresses, dimensions, formats, sizes)
-
-Use `extract_from_table.py` to extract images from the file table.
-
-## String Header Analysis (Work in Progress)
-
-Preliminary findings suggest that text entries follow a consistent header format:
-`[ID] 0x20 [Length] [Text...]`.
-
-- The **ID** byte varies by entry and may classify the string type (e.g., reports, memos, film labels).
-- The **Length** byte matches the visible character count of the string, though some entries are followed by additional control codes (e.g., `0x0D`, `0x0A`).
-- The exact meaning of different ID values and how terminators are handled is still under investigation.
-
-### Complete String Header Data
-
-| Header Addr | String Addr | Header bytes | String                  |
-| ----------- | ----------- | ------------ | ----------------------- |
-| 0x0142CFFB  | 0x0142CFFE  | F8 20 0F     | CHRIS'S DIARY           |
-| 0x0142D765  | 0x0142D768  | F7 20 0C     | Memo To Leon            |
-| 0x0142D84D  | 0x0142D850  | FA 20 11     | Police Memorandum       |
-| 0x0142D993  | 0x0142D996  | F9 20 12     | OPERATION REPORT        |
-| 0x0142E0E1  | 0x0142E0E4  | F8 20 11     | MAIL TO THE CHIEF       |
-| 0x0142F167  | 0x0142F16A  | FA 20 11     | USER REGISTRATION       |
-| 0x0142F213  | 0x0142F216  | E7 20 06     | FILM A                  |
-| 0x0142F269  | 0x0142F26C  | E7 20 06     | FILM B                  |
-| 0x0142F383  | 0x0142F386  | E7 20 06     | FILM C                  |
-| 0x0142F43F  | 0x0142F442  | F8 20 0D     | PATROL REPORT           |
-| 0x0142FBC3  | 0x0142FBC6  | F8 20 0D     | CHIEF'S DIARY           |
-| 0x014309D1  | 0x014309D4  | E9 20 07     | RECRUIT                 |
-| 0x0143125B  | 0x0143125E  | FD 20 19     | INVESTIGATIVE REPORT ON |
-| 0x01431277  | 0x0143127A  | F8 20 0F     | P-EPSILON GAS           |
-| 0x01434BD5  | 0x01434BD8  | F7 20 0D     | #FILE 15/16             |
-| 0x01434BE5  | 0x01434BE8  | F5 20 09     | WANT AD                 |
-
 
 ## System / Debug Strings
 

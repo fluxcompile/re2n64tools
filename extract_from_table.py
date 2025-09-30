@@ -160,25 +160,6 @@ def convert_16bit_palette_to_png(compressed_data, width, height, output_path, pa
         print(f"  Error converting 16-bit palette: {e}")
         return False
 
-def handle_text_block(file_info, compressed_data, output_path, filename):
-    """Handle text block extraction (zlib decompression)."""
-    try:
-        # Decompress the zlib data
-        decompressed = zlib.decompress(compressed_data)
-        
-        # Convert to text and save
-        text_content = decompressed.decode('ascii', errors='replace')
-        
-        with open(output_path, 'w', encoding='utf-8') as f:
-            f.write(text_content)
-        
-        print(f"  {filename} ({len(decompressed)} bytes decompressed)")
-        return True, text_content
-        
-    except Exception as e:
-        print(f"  Error handling text block: {e}")
-        return False, None
-
 def handle_compressed_image(file_info, data, output_path, filename):
     """Handle extraction and conversion of compressed images."""
     width = file_info['image_width']
@@ -206,6 +187,48 @@ def handle_compressed_image(file_info, data, output_path, filename):
         else:
             print(f"  [FAIL] Failed to convert: {filename}")
             return False
+
+def calculate_file_size(file_info, file_type, start_addr, end_addr):
+    """Calculate the size to read for a file based on its type and compression."""
+    if file_type == 'text_blocks':
+        if file_info.get('compression') == 'uncompressed':
+            # For uncompressed text, use the size field
+            size = file_info.get('size', 0)
+            if size == 0:
+                # Fallback: calculate from address range
+                size = end_addr - start_addr + 1
+                print(f"  [DEBUG] Using calculated size for {file_info['filename']}: {size} bytes")
+            return size
+        else:
+            # For compressed text, use compressed_size
+            return file_info.get('compressed_size', 0)
+    else:
+        return file_info.get('decompressed_size_bytes', file_info.get('size_bytes', 0))
+
+def handle_text_extraction(file_info, data, output_path, filename):
+    """Handle text extraction for both compressed and uncompressed text blocks."""
+    try:
+        # If compressed, decompress first
+        if file_info.get('compression') != 'uncompressed':
+            text_data = zlib.decompress(data)
+        else:
+            text_data = data
+        
+            # Debug: print raw bytes
+            print(f"  [DEBUG] Raw bytes for {filename}: {text_data.hex().upper()}")
+        
+        # Convert to text and save
+        text_content = text_data.decode('utf-8', errors='replace')
+        
+        with open(output_path, 'w', encoding='utf-8') as f:
+            f.write(text_content)
+        
+        print(f"  {filename} ({len(text_data)} bytes)")
+        return True, text_content
+        
+    except Exception as e:
+        print(f"  Error handling text block: {e}")
+        return False, None
 
 def convert_compressed_binary_to_png(compressed_data, width, height, output_path, format_type="24-bit"):
     """Convert compressed binary image data to PNG format."""
@@ -306,11 +329,8 @@ def extract_from_file_table(rom_path, file_table_json, output_dir="extracted", f
                 start = int(file_info['start_addr'], 16)
                 end = int(file_info['end_addr'], 16)
                 
-                # For text_blocks, use compressed_size; for others, use decompressed_size
-                if file_type == 'text_blocks':
-                    size = file_info.get('compressed_size', 0)
-                else:
-                    size = file_info.get('decompressed_size_bytes', file_info.get('size_bytes', 0))
+                # Calculate size to read
+                size = calculate_file_size(file_info, file_type, start, end)
                 
                 rom.seek(start)
                 data = rom.read(size)
@@ -323,23 +343,19 @@ def extract_from_file_table(rom_path, file_table_json, output_dir="extracted", f
                         # Fallback: save raw data
                         with open(out_path, 'wb') as out:
                             out.write(data)
-                # Special handling for text blocks (zlib decompression)
+                # Special handling for text blocks
                 elif file_type == 'text_blocks':
-                    success, text_content = handle_text_block(file_info, data, out_path, filename)
+                    success, text_content = handle_text_extraction(file_info, data, out_path, filename)
                     if success and text_content:
                         # Collect text block data for CSV
                         text_blocks_data.append({
                             'start_addr': file_info['start_addr'],
                             'end_addr': file_info['end_addr'],
-                            'compressed_size': file_info['compressed_size'],
-                            'decompressed_size': file_info['decompressed_size'],
+                            'compressed_size': len(data) if file_info.get('compression') == 'uncompressed' else file_info['compressed_size'],
+                            'decompressed_size': len(data) if file_info.get('compression') == 'uncompressed' else file_info['decompressed_size'],
                             'filename': filename,
-                            'content': text_content.strip()
+                            'content': text_content
                         })
-                    elif not success:
-                        # Fallback: save raw data
-                        with open(out_path, 'wb') as out:
-                            out.write(data)
                 else:
                     # Normal file extraction
                     with open(out_path, 'wb') as out:

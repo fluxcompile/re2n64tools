@@ -270,6 +270,14 @@
         "type": "text_blocks"
       },
       {
+        "filename": "uncompressed_text_0x0142E856.txt",
+        "start_addr": "0x0142E856",
+        "end_addr": "0x0142E875",
+        "size": 32,
+        "type": "text_blocks",
+        "compression": "uncompressed"
+      },
+      {
         "filename": "text_block_0x0142E87E.txt",
         "start_addr": "0x0142E87E",
         "end_addr": "0x0142E927",
@@ -294,6 +302,14 @@
         "type": "text_blocks"
       },
       {
+        "filename": "uncompressed_text_0x0142EA56.txt",
+        "start_addr": "0x0142EA56",
+        "end_addr": "0x0142EA8F",
+        "size": 58,
+        "type": "text_blocks",
+        "compression": "uncompressed"
+      },
+      {
         "filename": "text_block_0x0142EA98.txt",
         "start_addr": "0x0142EA98",
         "end_addr": "0x0142EB3F",
@@ -308,6 +324,14 @@
         "compressed_size": 136,
         "decompressed_size": 195,
         "type": "text_blocks"
+      },
+      {
+        "filename": "uncompressed_text_0x0142EBD8.txt",
+        "start_addr": "0x0142EBD8",
+        "end_addr": "0x0142EBF7",
+        "size": 32,
+        "type": "text_blocks",
+        "compression": "uncompressed"
       },
       {
         "filename": "text_block_0x0142EC00.txt",
@@ -534,6 +558,14 @@
         "type": "text_blocks"
       },
       {
+        "filename": "uncompressed_text_0x0142FFB8.txt",
+        "start_addr": "0x0142FFB8",
+        "end_addr": "0x0142FFF9",
+        "size": 66,
+        "type": "text_blocks",
+        "compression": "uncompressed"
+      },
+      {
         "filename": "text_block_0x0143002A.txt",
         "start_addr": "0x0143002A",
         "end_addr": "0x014300FB",
@@ -708,6 +740,14 @@
         "compressed_size": 196,
         "decompressed_size": 270,
         "type": "text_blocks"
+      },
+      {
+        "filename": "uncompressed_text_0x01430ED0.txt",
+        "start_addr": "0x01430ED0",
+        "end_addr": "0x01430EF3",
+        "size": 36,
+        "type": "text_blocks",
+        "compression": "uncompressed"
       },
       {
         "filename": "text_block_0x01430EFC.txt",
@@ -886,6 +926,14 @@
         "type": "text_blocks"
       },
       {
+        "filename": "uncompressed_text_0x01431CA2.txt",
+        "start_addr": "0x01431CA2",
+        "end_addr": "0x01431CCD",
+        "size": 44,
+        "type": "text_blocks",
+        "compression": "uncompressed"
+      },
+      {
         "filename": "text_block_0x01431CD6.txt",
         "start_addr": "0x01431CD6",
         "end_addr": "0x01431D83",
@@ -1052,6 +1100,14 @@
         "compressed_size": 184,
         "decompressed_size": 261,
         "type": "text_blocks"
+      },
+      {
+        "filename": "uncompressed_text_0x01432A15.txt",
+        "start_addr": "0x01432A15",
+        "end_addr": "0x01432A51",
+        "size": 61,
+        "type": "text_blocks",
+        "compression": "uncompressed"
       },
       {
         "filename": "text_block_0x01432A5A.txt",
@@ -1412,6 +1468,14 @@
         "compressed_size": 188,
         "decompressed_size": 269,
         "type": "text_blocks"
+      },
+      {
+        "filename": "uncompressed_text_0x01434530.txt",
+        "start_addr": "0x01434530",
+        "end_addr": "0x0143457B",
+        "size": 76,
+        "type": "text_blocks",
+        "compression": "uncompressed"
       },
       {
         "filename": "text_block_0x01434584.txt",
@@ -12397,6 +12461,18 @@
         "has_palette": true
       },
       {
+        "filename": "image_0x03B47AB4.png",
+        "start_addr": "0x03B47AB4",
+        "end_addr": "0x03B486F5",
+        "decompressed_size_bytes": 8596,
+        "type": "compressed_images",
+        "image_width": 112,
+        "image_height": 72,
+        "format": "16-bit",
+        "has_palette": true,
+        "palette_size": 512
+      },
+      {
         "filename": "image_0x03B486FE.png",
         "start_addr": "0x03B486FE",
         "end_addr": "0x03B4918F",
@@ -12441,6 +12517,42 @@
         "has_palette": true
       },
       {
+        "filename": "image_0x03B4AC7E.png",
+        "start_addr": "0x03B4AC7E",
+        "end_addr": "0x03B4B503",
+        "decompressed_size_bytes": 8596,
+        "type": "compressed_images",
+        "image_width": 112,
+        "image_height": 72,
+        "format": "16-bit",
+        "has_palette": true,
+        "palette_size": 512
+      },
+      {
+        "filename": "image_0x03B4B50C.png",
+        "start_addr": "0x03B4B50C",
+        "end_addr": "0x03B4BD2D",
+        "decompressed_size_bytes": 8596,
+        "type": "compressed_images",
+        "image_width": 112,
+        "image_height": 72,
+        "format": "16-bit",
+        "has_palette": true,
+        "palette_size": 512
+      },
+      {
+        "filename": "image_0x03B4BD36.png",
+        "start_addr": "0x03B4BD36",
+        "end_addr": "0x03B4C5CD",
+        "decompressed_size_bytes": 8596,
+        "type": "compressed_images",
+        "image_width": 112,
+        "image_height": 72,
+        "format": "16-bit",
+        "has_palette": true,
+        "palette_size": 512
+      },
+      {
         "filename": "image_0x03B4C5D6.png",
         "start_addr": "0x03B4C5D6",
         "end_addr": "0x03B4D0B7",
@@ -12463,6 +12575,18 @@
         "has_palette": true
       },
       {
+        "filename": "image_0x03B4D814.png",
+        "start_addr": "0x03B4D814",
+        "end_addr": "0x03B4E32B",
+        "decompressed_size_bytes": 8596,
+        "type": "compressed_images",
+        "image_width": 112,
+        "image_height": 72,
+        "format": "16-bit",
+        "has_palette": true,
+        "palette_size": 512
+      },
+      {
         "filename": "image_0x03B4E334.png",
         "start_addr": "0x03B4E334",
         "end_addr": "0x03B4F0E1",
@@ -12483,6 +12607,18 @@
         "image_height": 72,
         "format": "16-bit",
         "has_palette": true
+      },
+      {
+        "filename": "image_0x03B4FB5E.png",
+        "start_addr": "0x03B4FB5E",
+        "end_addr": "0x03B504EB",
+        "decompressed_size_bytes": 8596,
+        "type": "compressed_images",
+        "image_width": 112,
+        "image_height": 72,
+        "format": "16-bit",
+        "has_palette": true,
+        "palette_size": 512
       },
       {
         "filename": "image_0x03B504F4.png",
@@ -13046,6 +13182,17 @@
         "has_palette": true
       },
       {
+        "filename": "image_0x03B6F138.png",
+        "start_addr": "0x03B6F138",
+        "end_addr": "0x03B6FA83",
+        "decompressed_size_bytes": 8596,
+        "type": "compressed_images",
+        "image_width": 112,
+        "image_height": 72,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
         "filename": "image_0x03B6FA84.png",
         "start_addr": "0x03B6FA84",
         "end_addr": "0x03B701B7",
@@ -13365,6 +13512,18 @@
         "has_palette": true
       },
       {
+        "filename": "image_0x03B99AA8.png",
+        "start_addr": "0x03B99AA8",
+        "end_addr": "0x03B9EA2F",
+        "decompressed_size_bytes": 61972,
+        "type": "compressed_images",
+        "image_width": 320,
+        "image_height": 192,
+        "format": "16-bit",
+        "has_palette": true,
+        "palette_size": 512
+      },
+      {
         "filename": "image_0x03B9EA38.png",
         "start_addr": "0x03B9EA38",
         "end_addr": "0x03BA50E1",
@@ -13434,6 +13593,17 @@
         "filename": "image_0x03BB8F8E.png",
         "start_addr": "0x03BB8F8E",
         "end_addr": "0x03BBBA6D",
+        "decompressed_size_bytes": 66068,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 256,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03BBBA6E.png",
+        "start_addr": "0x03BBBA6E",
+        "end_addr": "0x03BBD0B7",
         "decompressed_size_bytes": 66068,
         "type": "compressed_images",
         "image_width": 256,
