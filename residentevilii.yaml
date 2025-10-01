@@ -1,0 +1,85 @@
+name: Resident Evil Ii (North America)
+sha1: 62ec19bead748c12d38f6c5a7ab0831edbd3d44b
+options:
+  basename: residentevilii
+  target_path: re2.z64
+  elf_path: build/residentevilii.elf
+  base_path: .
+  platform: n64
+  compiler: KMC
+
+  # asm_path: asm
+  # src_path: src
+  # build_path: build
+  # create_asm_dependencies: True
+
+  ld_script_path: residentevilii.ld
+  ld_dependencies: True
+
+  find_file_boundaries: True
+  header_encoding: ASCII
+
+  o_as_suffix: True
+  use_legacy_include_asm: False
+  mips_abi_float_regs: o32
+
+  # section_order: [".text", ".data", ".rodata", ".bss"]
+  # auto_link_sections: [".data", ".rodata", ".bss"]
+
+  symbol_addrs_path:
+    - symbol_addrs.txt
+  reloc_addrs_path:
+    - reloc_addrs.txt
+
+  # undefined_funcs_auto_path: undefined_funcs_auto.txt
+  # undefined_syms_auto_path: undefined_syms_auto.txt
+
+  extensions_path: tools/splat_ext
+
+  # string_encoding: ASCII
+  # data_string_encoding: ASCII
+  rodata_string_guesser_level: 2
+  data_string_guesser_level: 2
+  # libultra_symbols: True
+  # hardware_regs: True
+  # gfx_ucode: # one of [f3d, f3db, f3dex, f3dexb, f3dex2]
+segments:
+  - name: header
+    type: header
+    start: 0x0
+
+  - name: boot
+    type: bin
+    start: 0x40
+
+  - name: rodata1
+    type: bin
+    start: 0xFA8
+
+  - name: text1
+    type: bin
+    start: 0x1440
+
+  - name: text2
+    type: code
+    start: 0x1AD0
+    vram: 0x8001F00
+    subsegments:
+      - [0x1AD0, asm]
+      - [0x1AE0, bin]
+
+  - name: text3
+    type: bin
+    start: 0x1B60
+
+  - name: rodata2
+    type: bin
+    start: 0x12584
+
+  - name: assets
+    type: bin
+    start: 0xB628C
+
+  # End of ROM
+  - [0x4000000]
+
