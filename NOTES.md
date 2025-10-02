@@ -4,7 +4,8 @@
 
 | Address Range         | Purpose                      |
 | --------------------- | ---------------------------- |
-| 0x00000000-0x000D8324 | Code                         |
+| 0x00000000-0x000B628B | Code                         |
+| 0x000B628C-0x000D8323 | Unknown binary data          |
 | 0x000D8324-0x00338FE1 | Compressed data              |
 | 0x0034C18B–0x00B2C346 | Unknown binary data          |
 | 0x00B63106-0x00B73FB3 | Compressed data              |

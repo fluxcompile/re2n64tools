@@ -63,22 +63,49 @@ segments:
   - name: text2
     type: code
     start: 0x1AD0
-    vram: 0x8001F00
+    vram: 0x8001F10
     subsegments:
       - [0x1AD0, asm]
-      - [0x1AE0, bin]
+      - [0x1AE0, data]
 
   - name: text3
     type: bin
-    start: 0x1B60
+    start: 0x6000
 
   - name: rodata2
-    type: bin
-    start: 0x12584
+    type: data
+    start: 0x12400
+    vram: 0x80012840
+    subsegments:
+      - [0x12400, data]
 
-  - name: assets
+  - name: text4
     type: bin
-    start: 0xB628C
+    start: 0x15000
+
+  - name: assets_0x000B6240
+    type: bin
+    start: 0x000B6240
+
+  - name: video
+    type: bin
+    start: 0x01440F38
+
+  - name: assets_0x02B7D8EA
+    type: bin
+    start: 0x02B7D8EA
+
+  - name: jpeg_images
+    type: bin
+    start: 0x02BDEFB2
+
+  - name: assets_0x03AF17FE
+    type: bin
+    start: 0x03AF17FE
+
+  - name: empty_data
+    type: bin
+    start: 0x03FD0DF6
 
   # End of ROM
   - [0x4000000]
