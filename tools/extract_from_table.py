@@ -11,22 +11,10 @@ import zlib
 import numpy as np
 from PIL import Image
 
-def parse_header(decompressed_data, start_offset=20):
-    """Parse header into 5 uint32 big-endian values."""
-    header = decompressed_data[:start_offset]
-    header_values = []
-    for i in range(0, start_offset, 4):
-        value = int.from_bytes(header[i:i+4], byteorder='big')
-        header_values.append(value)
-    return header_values
-
 def decode_palette_entries(palette_data):
     """Decode palette data into 16-bit entries."""
-    palette_entries = []
-    for i in range(0, len(palette_data), 2):
-        word = (palette_data[i] << 8) | palette_data[i + 1]
-        palette_entries.append(word)
-    return palette_entries
+    return [(palette_data[i] << 8) | palette_data[i + 1] 
+            for i in range(0, len(palette_data), 2)]
 
 def decode_rgba5551_to_rgb(value):
     """Decode a single RGBA5551 value to RGB tuple."""
@@ -37,20 +25,12 @@ def decode_rgba5551_to_rgb(value):
 
 def decode_palette_to_rgb(palette_entries, palette_format="RGBA5551"):
     """Decode palette entries to RGB values."""
-    palette_rgb = []
-    for entry in palette_entries:
-        rgb = decode_rgba5551_to_rgb(entry)
-        palette_rgb.append(rgb)
-    return palette_rgb
+    return [decode_rgba5551_to_rgb(entry) for entry in palette_entries]
 
 def render_palette_image(pixel_indices, palette_rgb, width, height):
     """Render image using pixel indices and palette."""
-    pixels = []
-    for idx in pixel_indices:
-        if idx < len(palette_rgb):
-            pixels.append(palette_rgb[idx])
-        else:
-            pixels.append((0, 0, 0))  # Black for out-of-range indices
+    pixels = [palette_rgb[idx] if idx < len(palette_rgb) else (0, 0, 0) 
+              for idx in pixel_indices]
     
     return np.array(pixels, dtype=np.uint8).reshape((height, width, 3))
 
@@ -63,7 +43,7 @@ def render_single_palette(pixel_indices, palette_entries, width, height, output_
     img.save(output_path, 'PNG')
     print(f"  [OK] Saved single palette: {output_path}")
 
-def render_multiple_palettes(pixel_indices, palette_entries, palette_count, width, height, output_path, palette_format="RGBA5551"):
+def render_multiple_palettes(pixel_indices, palette_entries, palette_count, width, height, output_path, palette_format="RGBA5551", palette_color_size=256):
     """Render image with multiple palettes in a grid layout."""
     print(f"  Combining {palette_count} palettes into grid...")
     
@@ -77,8 +57,9 @@ def render_multiple_palettes(pixel_indices, palette_entries, palette_count, widt
     combined_pixels = np.zeros((combined_height, combined_width, 3), dtype=np.uint8)
     
     for palette_idx in range(palette_count):
-        palette_start = palette_idx * 256
-        palette_end = palette_start + 256
+        # Calculate palette start/end based on actual palette size
+        palette_start = palette_idx * palette_color_size
+        palette_end = palette_start + palette_color_size
         
         if palette_end > len(palette_entries):
             print(f"  [WARN] Palette {palette_idx} extends beyond available entries")
@@ -106,8 +87,8 @@ def render_multiple_palettes(pixel_indices, palette_entries, palette_count, widt
     img = Image.fromarray(combined_pixels, 'RGB')
     img.save(output_path, 'PNG')
     
-    print(f"  [OK] Saved combined image ({rows}×{cols} grid): {output_path}")
-
+    print(f"  [OK] Saved combined image ({rows}x{cols} grid): {output_path}")
+    
 def convert_16bit_palette_to_png(compressed_data, width, height, output_path, palette_format="RGBA5551"):
     """Convert 16-bit palette image data to PNG format."""
     try:
@@ -117,11 +98,28 @@ def convert_16bit_palette_to_png(compressed_data, width, height, output_path, pa
         # Parse header from decompressed data
         start_offset = 20
         print(f"  Decompressed size: {len(decompressed)} bytes")
-        print(f"  First 32 bytes: {decompressed[:32].hex()}")
-        
-        header_values = parse_header(decompressed, start_offset)
+
+        # Parse header into 5 uint32 big-endian values
+        header_values = [int.from_bytes(decompressed[i:i+4], byteorder='big') 
+                        for i in range(0, start_offset, 4)]
         print(f"  Header values: {header_values}")
+
+        image_width = header_values[1]
+        image_height = header_values[2]
+
+        if image_width != width or image_height != height:
+            print(f"  [WARN] Unexpected dimensions: {image_width}x{image_height}, expected {width}x{height}")
+            return False
+
+        palette_color_size = header_values[3]
+        if palette_color_size not in [16, 256]:
+            print(f"  [WARN] Unexpected palette size: {palette_color_size}, expected 16 (CI4) or 256 (CI8)")
+            return False
         
+        # Determine format: CI4 (16 colors) or CI8 (256 colors)
+        format_name = "CI4" if palette_color_size == 16 else "CI8"
+        print(f"  Format: {format_name} ({palette_color_size} colors)")
+
         palette_count = header_values[4]
         print(f"  Palette count: {palette_count}")
         
@@ -131,18 +129,35 @@ def convert_16bit_palette_to_png(compressed_data, width, height, output_path, pa
             palette_count = 1
 
         # Calculate sizes
-        palette_size = 256 * 2 * palette_count
-        pixel_indices_size = width * height  # 8-bit indices
+        palette_color_bytes = 2  # 16-bit RGBA5551 per color
+        palette_size = palette_color_size * palette_color_bytes * palette_count
+        
+        # Pixel indices: CI8 uses 8-bit indices, CI4 uses 4-bit packed indices
+        if palette_color_size == 256:  # CI8
+            pixel_indices_size = width * height  # 8-bit indices
+        else:  # CI4
+            pixel_indices_size = (width * height + 1) // 2  # 4-bit indices packed
         
         expected_total = start_offset + pixel_indices_size + palette_size
         if expected_total != len(decompressed):
             print(f"  [WARN] Unexpected decompressed size: expected {expected_total}, got {len(decompressed)}")
 
         # Extract data sections
-        pixel_indices = decompressed[start_offset:start_offset+pixel_indices_size]
+        pixel_indices_raw = decompressed[start_offset:start_offset+pixel_indices_size]
         palette_data = decompressed[-palette_size:]
         
-        print(f"  Pixel indices: {len(pixel_indices)} bytes, Palette data: {len(palette_data)} bytes")
+        # Convert pixel indices based on format
+        if palette_color_size == 256:  # CI8 - 8-bit indices
+            pixel_indices = list(pixel_indices_raw)
+        else:  # CI4 - 4-bit packed indices (big-endian)
+            pixel_indices = []
+            for byte in pixel_indices_raw:
+                pixel_indices.append((byte >> 4) & 0x0F)  # Upper 4 bits (first pixel)
+                pixel_indices.append(byte & 0x0F)  # Lower 4 bits (second pixel)
+            # Trim to exact pixel count
+            pixel_indices = pixel_indices[:width * height]
+        
+        print(f"  Pixel indices: {len(pixel_indices)} pixels ({format_name}), Palette data: {len(palette_data)} bytes")
         
         # Decode all palette entries
         palette_entries = decode_palette_entries(palette_data)
@@ -152,7 +167,7 @@ def convert_16bit_palette_to_png(compressed_data, width, height, output_path, pa
         if palette_count == 1:
             render_single_palette(pixel_indices, palette_entries, width, height, output_path, palette_format)
         else:
-            render_multiple_palettes(pixel_indices, palette_entries, palette_count, width, height, output_path, palette_format)
+            render_multiple_palettes(pixel_indices, palette_entries, palette_count, width, height, output_path, palette_format, palette_color_size)
         
         return True
         
@@ -170,7 +185,7 @@ def handle_compressed_image(file_info, data, output_path, filename):
     
     if has_palette:
         palette_format = file_info.get('palette_format', 'RGBA5551')
-        print(f"  Converting compressed image with palette: {filename} ({size:,} bytes) -> {width}×{height} PNG (palette: {palette_format})")
+        print(f"  Converting compressed image with palette: {filename} ({size:,} bytes) -> {width}x{height} PNG (palette: {palette_format})")
         
         if convert_16bit_palette_to_png(data, width, height, output_path, palette_format):
             print(f"  [OK] Converted to PNG: {filename}")
@@ -179,7 +194,7 @@ def handle_compressed_image(file_info, data, output_path, filename):
             print(f"  [FAIL] Failed to convert: {filename}")
             return False
     else:
-        print(f"  Converting compressed image: {filename} ({size:,} bytes) -> {width}×{height} {format_type} PNG")
+        print(f"  Converting compressed image: {filename} ({size:,} bytes) -> {width}x{height} {format_type} PNG")
         
         if convert_compressed_binary_to_png(data, width, height, output_path, format_type):
             print(f"  [OK] Converted to PNG: {filename}")

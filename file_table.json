@@ -12186,6 +12186,17 @@
         "format": "16-bit"
       },
       {
+        "filename": "image_0x03B11366.png",
+        "start_addr": "0x03B11366",
+        "end_addr": "0x03B135EB",
+        "decompressed_size_bytes": 98836,
+        "type": "compressed_images",
+        "image_width": 384,
+        "image_height": 256,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
         "filename": "tofu_survivor_0x03B135F4.png",
         "start_addr": "0x03B135F4",
         "end_addr": "0x03B14AB7",
@@ -12241,6 +12252,28 @@
         "has_palette": true
       },
       {
+        "filename": "image_0x03B20A6E.png",
+        "start_addr": "0x03B20A6E",
+        "end_addr": "0x03B215CD",
+        "decompressed_size_bytes": 9812,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 72,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03B215D6.png",
+        "start_addr": "0x03B215D6",
+        "end_addr": "0x03B247F5",
+        "decompressed_size_bytes": 34004,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 256,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
         "filename": "computer_registration_0x03B247FE.png",
         "start_addr": "0x03B247FE",
         "end_addr": "0x03B25553",
@@ -12259,6 +12292,17 @@
         "type": "compressed_images",
         "image_width": 128,
         "image_height": 256,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03B27778.png",
+        "start_addr": "0x03B27778",
+        "end_addr": "0x03B2794D",
+        "decompressed_size_bytes": 1556,
+        "type": "compressed_images",
+        "image_width": 32,
+        "image_height": 32,
         "format": "16-bit",
         "has_palette": true
       },
@@ -12469,8 +12513,7 @@
         "image_width": 112,
         "image_height": 72,
         "format": "16-bit",
-        "has_palette": true,
-        "palette_size": 512
+        "has_palette": true
       },
       {
         "filename": "image_0x03B486FE.png",
@@ -12525,8 +12568,7 @@
         "image_width": 112,
         "image_height": 72,
         "format": "16-bit",
-        "has_palette": true,
-        "palette_size": 512
+        "has_palette": true
       },
       {
         "filename": "image_0x03B4B50C.png",
@@ -12537,8 +12579,7 @@
         "image_width": 112,
         "image_height": 72,
         "format": "16-bit",
-        "has_palette": true,
-        "palette_size": 512
+        "has_palette": true
       },
       {
         "filename": "image_0x03B4BD36.png",
@@ -12549,8 +12590,7 @@
         "image_width": 112,
         "image_height": 72,
         "format": "16-bit",
-        "has_palette": true,
-        "palette_size": 512
+        "has_palette": true
       },
       {
         "filename": "image_0x03B4C5D6.png",
@@ -12583,8 +12623,7 @@
         "image_width": 112,
         "image_height": 72,
         "format": "16-bit",
-        "has_palette": true,
-        "palette_size": 512
+        "has_palette": true
       },
       {
         "filename": "image_0x03B4E334.png",
@@ -12617,8 +12656,7 @@
         "image_width": 112,
         "image_height": 72,
         "format": "16-bit",
-        "has_palette": true,
-        "palette_size": 512
+        "has_palette": true
       },
       {
         "filename": "image_0x03B504F4.png",
@@ -13520,8 +13558,7 @@
         "image_width": 320,
         "image_height": 192,
         "format": "16-bit",
-        "has_palette": true,
-        "palette_size": 512
+        "has_palette": true
       },
       {
         "filename": "image_0x03B9EA38.png",
@@ -13630,6 +13667,721 @@
         "type": "compressed_images",
         "image_width": 128,
         "image_height": 16,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03BBDE0A.png",
+        "start_addr": "0x03BBDE0A",
+        "end_addr": "0x03BBE419",
+        "decompressed_size_bytes": 33140,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 256,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03BBE422.png",
+        "start_addr": "0x03BBE422",
+        "end_addr": "0x03BBE8BD",
+        "decompressed_size_bytes": 33140,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 256,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03BBE8C6.png",
+        "start_addr": "0x03BBE8C6",
+        "end_addr": "0x03BBF0BB",
+        "decompressed_size_bytes": 33140,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 256,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03BBF0C4.png",
+        "start_addr": "0x03BBF0C4",
+        "end_addr": "0x03BBF597",
+        "decompressed_size_bytes": 33140,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 256,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03BBF5A0.png",
+        "start_addr": "0x03BBF5A0",
+        "end_addr": "0x03BBFD83",
+        "decompressed_size_bytes": 33140,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 256,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03BBFD8C.png",
+        "start_addr": "0x03BBFD8C",
+        "end_addr": "0x03BC03F1",
+        "decompressed_size_bytes": 33140,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 256,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03BC03FA.png",
+        "start_addr": "0x03BC03FA",
+        "end_addr": "0x03BC0B77",
+        "decompressed_size_bytes": 33140,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 256,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03BC0B80.png",
+        "start_addr": "0x03BC0B80",
+        "end_addr": "0x03BC106F",
+        "decompressed_size_bytes": 33140,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 256,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03BC1078.png",
+        "start_addr": "0x03BC1078",
+        "end_addr": "0x03BC16B5",
+        "decompressed_size_bytes": 33140,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 256,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03BC16BE.png",
+        "start_addr": "0x03BC16BE",
+        "end_addr": "0x03BC1C13",
+        "decompressed_size_bytes": 33140,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 256,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03BC1C1C.png",
+        "start_addr": "0x03BC1C1C",
+        "end_addr": "0x03BC21B7",
+        "decompressed_size_bytes": 33140,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 256,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03BC21C0.png",
+        "start_addr": "0x03BC21C0",
+        "end_addr": "0x03BC271B",
+        "decompressed_size_bytes": 33140,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 256,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03BC2724.png",
+        "start_addr": "0x03BC2724",
+        "end_addr": "0x03BC2C1F",
+        "decompressed_size_bytes": 33140,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 256,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03BC2C28.png",
+        "start_addr": "0x03BC2C28",
+        "end_addr": "0x03BC325F",
+        "decompressed_size_bytes": 33140,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 256,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03BC3268.png",
+        "start_addr": "0x03BC3268",
+        "end_addr": "0x03BC374F",
+        "decompressed_size_bytes": 33140,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 256,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03BC3758.png",
+        "start_addr": "0x03BC3758",
+        "end_addr": "0x03BC3C2D",
+        "decompressed_size_bytes": 33140,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 256,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03BC3C36.png",
+        "start_addr": "0x03BC3C36",
+        "end_addr": "0x03BC46B3",
+        "decompressed_size_bytes": 33140,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 256,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03BC46BC.png",
+        "start_addr": "0x03BC46BC",
+        "end_addr": "0x03BC4DD3",
+        "decompressed_size_bytes": 33140,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 256,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03BC4DDC.png",
+        "start_addr": "0x03BC4DDC",
+        "end_addr": "0x03BC53C5",
+        "decompressed_size_bytes": 33140,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 256,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03BC53CE.png",
+        "start_addr": "0x03BC53CE",
+        "end_addr": "0x03BC5769",
+        "decompressed_size_bytes": 33140,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 256,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03BC5772.png",
+        "start_addr": "0x03BC5772",
+        "end_addr": "0x03BC59CF",
+        "decompressed_size_bytes": 1812,
+        "type": "compressed_images",
+        "image_width": 64,
+        "image_height": 55,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03F701EC.png",
+        "start_addr": "0x03F701EC",
+        "end_addr": "0x03F70EB5",
+        "decompressed_size_bytes": 11412,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 88,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03F70EBE.png",
+        "start_addr": "0x03F70EBE",
+        "end_addr": "0x03F715DF",
+        "decompressed_size_bytes": 6228,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 48,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03F715E8.png",
+        "start_addr": "0x03F715E8",
+        "end_addr": "0x03F71B29",
+        "decompressed_size_bytes": 4212,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 32,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03F71B32.png",
+        "start_addr": "0x03F71B32",
+        "end_addr": "0x03F73CC7",
+        "decompressed_size_bytes": 21652,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 168,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03F73CD0.png",
+        "start_addr": "0x03F73CD0",
+        "end_addr": "0x03F74A55",
+        "decompressed_size_bytes": 10388,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 80,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03F74A5E.png",
+        "start_addr": "0x03F74A5E",
+        "end_addr": "0x03F75199",
+        "decompressed_size_bytes": 5172,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 40,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03F751A2.png",
+        "start_addr": "0x03F751A2",
+        "end_addr": "0x03F7557B",
+        "decompressed_size_bytes": 4148,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 32,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03F75584.png",
+        "start_addr": "0x03F75584",
+        "end_addr": "0x03F75F69",
+        "decompressed_size_bytes": 9268,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 72,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03F75F72.png",
+        "start_addr": "0x03F75F72",
+        "end_addr": "0x03F76655",
+        "decompressed_size_bytes": 4180,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 32,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03F7665E.png",
+        "start_addr": "0x03F7665E",
+        "end_addr": "0x03F76D2F",
+        "decompressed_size_bytes": 4148,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 32,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03F76D38.png",
+        "start_addr": "0x03F76D38",
+        "end_addr": "0x03F776ED",
+        "decompressed_size_bytes": 9300,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 72,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03F776F6.png",
+        "start_addr": "0x03F776F6",
+        "end_addr": "0x03F7826D",
+        "decompressed_size_bytes": 15412,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 120,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03F78276.png",
+        "start_addr": "0x03F78276",
+        "end_addr": "0x03F7A3EF",
+        "decompressed_size_bytes": 27732,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 216,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03F7A3F8.png",
+        "start_addr": "0x03F7A3F8",
+        "end_addr": "0x03F7C707",
+        "decompressed_size_bytes": 21588,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 168,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03F7C710.png",
+        "start_addr": "0x03F7C710",
+        "end_addr": "0x03F7CA35",
+        "decompressed_size_bytes": 3156,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 24,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03F7CA3E.png",
+        "start_addr": "0x03F7CA3E",
+        "end_addr": "0x03F7CF4F",
+        "decompressed_size_bytes": 4148,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 32,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03F7CF58.png",
+        "start_addr": "0x03F7CF58",
+        "end_addr": "0x03F7D395",
+        "decompressed_size_bytes": 4148,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 32,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03F7D39E.png",
+        "start_addr": "0x03F7D39E",
+        "end_addr": "0x03F7D775",
+        "decompressed_size_bytes": 8244,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 64,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03F7D77E.png",
+        "start_addr": "0x03F7D77E",
+        "end_addr": "0x03F7DD0B",
+        "decompressed_size_bytes": 5172,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 40,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03F7DD14.png",
+        "start_addr": "0x03F7DD14",
+        "end_addr": "0x03F7E037",
+        "decompressed_size_bytes": 4148,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 32,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03F7E040.png",
+        "start_addr": "0x03F7E040",
+        "end_addr": "0x03F7E3AD",
+        "decompressed_size_bytes": 4212,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 32,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03F7E3B6.png",
+        "start_addr": "0x03F7E3B6",
+        "end_addr": "0x03F7E8AB",
+        "decompressed_size_bytes": 4244,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 32,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03F7E8B4.png",
+        "start_addr": "0x03F7E8B4",
+        "end_addr": "0x03F7F4B5",
+        "decompressed_size_bytes": 8244,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 64,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03F7F4BE.png",
+        "start_addr": "0x03F7F4BE",
+        "end_addr": "0x03F7FBB9",
+        "decompressed_size_bytes": 6196,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 48,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03F7FBC2.png",
+        "start_addr": "0x03F7FBC2",
+        "end_addr": "0x03F7FFF7",
+        "decompressed_size_bytes": 10292,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 80,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03F80000.png",
+        "start_addr": "0x03F80000",
+        "end_addr": "0x03F80BC5",
+        "decompressed_size_bytes": 10356,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 80,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03F80BCE.png",
+        "start_addr": "0x03F80BCE",
+        "end_addr": "0x03F828EF",
+        "decompressed_size_bytes": 17492,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 136,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03F828F8.png",
+        "start_addr": "0x03F828F8",
+        "end_addr": "0x03F83C4D",
+        "decompressed_size_bytes": 15444,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 120,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03F83C56.png",
+        "start_addr": "0x03F83C56",
+        "end_addr": "0x03F83E47",
+        "decompressed_size_bytes": 2100,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 16,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03F83E50.png",
+        "start_addr": "0x03F83E50",
+        "end_addr": "0x03F84C73",
+        "decompressed_size_bytes": 11380,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 88,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03F84C7C.png",
+        "start_addr": "0x03F84C7C",
+        "end_addr": "0x03F8533B",
+        "decompressed_size_bytes": 4148,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 32,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03F85344.png",
+        "start_addr": "0x03F85344",
+        "end_addr": "0x03F86049",
+        "decompressed_size_bytes": 12340,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 96,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03F86052.png",
+        "start_addr": "0x03F86052",
+        "end_addr": "0x03F8626B",
+        "decompressed_size_bytes": 10292,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 80,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03F86274.png",
+        "start_addr": "0x03F86274",
+        "end_addr": "0x03F87631",
+        "decompressed_size_bytes": 27700,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 216,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03F8763A.png",
+        "start_addr": "0x03F8763A",
+        "end_addr": "0x03F897CF",
+        "decompressed_size_bytes": 27700,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 216,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03F897D8.png",
+        "start_addr": "0x03F897D8",
+        "end_addr": "0x03F8A683",
+        "decompressed_size_bytes": 11412,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 88,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03F8A68C.png",
+        "start_addr": "0x03F8A68C",
+        "end_addr": "0x03F8DC9D",
+        "decompressed_size_bytes": 30772,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 240,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03F8DCA6.png",
+        "start_addr": "0x03F8DCA6",
+        "end_addr": "0x03F8EEBD",
+        "decompressed_size_bytes": 30772,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 240,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03F8EEC6.png",
+        "start_addr": "0x03F8EEC6",
+        "end_addr": "0x03F8FB87",
+        "decompressed_size_bytes": 15412,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 120,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03F8FB90.png",
+        "start_addr": "0x03F8FB90",
+        "end_addr": "0x03F9066F",
+        "decompressed_size_bytes": 10292,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 80,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03F90678.png",
+        "start_addr": "0x03F90678",
+        "end_addr": "0x03F92173",
+        "decompressed_size_bytes": 28756,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 224,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03F9217C.png",
+        "start_addr": "0x03F9217C",
+        "end_addr": "0x03F9252B",
+        "decompressed_size_bytes": 21556,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 168,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03F92534.png",
+        "start_addr": "0x03F92534",
+        "end_addr": "0x03F93319",
+        "decompressed_size_bytes": 19508,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 152,
+        "format": "16-bit",
+        "has_palette": true
+      },
+      {
+        "filename": "image_0x03F93322.png",
+        "start_addr": "0x03F93322",
+        "end_addr": "0x03F93A37",
+        "decompressed_size_bytes": 15412,
+        "type": "compressed_images",
+        "image_width": 256,
+        "image_height": 120,
         "format": "16-bit",
         "has_palette": true
       },
