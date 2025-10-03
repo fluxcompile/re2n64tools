@@ -23,7 +23,7 @@ def decode_rgba5551_to_rgb(value):
     b = ((value >> 1) & 0x1F) * 255 // 31
     return (r, g, b)
 
-def decode_palette_to_rgb(palette_entries, palette_format="RGBA5551"):
+def decode_palette_to_rgb(palette_entries):
     """Decode palette entries to RGB values."""
     return [decode_rgba5551_to_rgb(entry) for entry in palette_entries]
 
@@ -34,16 +34,16 @@ def render_palette_image(pixel_indices, palette_rgb, width, height):
     
     return np.array(pixels, dtype=np.uint8).reshape((height, width, 3))
 
-def render_single_palette(pixel_indices, palette_entries, width, height, output_path, palette_format="RGBA5551"):
+def render_single_palette(pixel_indices, palette_entries, width, height, output_path):
     """Render image with single palette."""
-    palette_rgb = decode_palette_to_rgb(palette_entries, palette_format)
+    palette_rgb = decode_palette_to_rgb(palette_entries)
     pixels = render_palette_image(pixel_indices, palette_rgb, width, height)
     
-    img = Image.fromarray(pixels, 'RGB')
+    img = Image.fromarray(pixels)
     img.save(output_path, 'PNG')
     print(f"  [OK] Saved single palette: {output_path}")
 
-def render_multiple_palettes(pixel_indices, palette_entries, palette_count, width, height, output_path, palette_format="RGBA5551", palette_color_size=256):
+def render_multiple_palettes(pixel_indices, palette_entries, palette_count, width, height, output_path, palette_color_size=256):
     """Render image with multiple palettes in a grid layout."""
     print(f"  Combining {palette_count} palettes into grid...")
     
@@ -67,7 +67,7 @@ def render_multiple_palettes(pixel_indices, palette_entries, palette_count, widt
         
         # Extract this palette's entries
         current_palette_entries = palette_entries[palette_start:palette_end]
-        palette_rgb = decode_palette_to_rgb(current_palette_entries, palette_format)
+        palette_rgb = decode_palette_to_rgb(current_palette_entries)
         pixels = render_palette_image(pixel_indices, palette_rgb, width, height)
         
         # Calculate position in combined image
@@ -84,12 +84,12 @@ def render_multiple_palettes(pixel_indices, palette_entries, palette_count, widt
         print(f"  [OK] Added palette {palette_idx} at position ({row}, {col})")
     
     # Create PIL Image and save as PNG
-    img = Image.fromarray(combined_pixels, 'RGB')
+    img = Image.fromarray(combined_pixels)
     img.save(output_path, 'PNG')
     
     print(f"  [OK] Saved combined image ({rows}x{cols} grid): {output_path}")
     
-def convert_16bit_palette_to_png(compressed_data, width, height, output_path, palette_format="RGBA5551"):
+def convert_16bit_palette_to_png(compressed_data, output_path):
     """Convert 16-bit palette image data to PNG format."""
     try:
         # Decompress the data
@@ -104,12 +104,9 @@ def convert_16bit_palette_to_png(compressed_data, width, height, output_path, pa
                         for i in range(0, start_offset, 4)]
         print(f"  Header values: {header_values}")
 
-        image_width = header_values[1]
-        image_height = header_values[2]
-
-        if image_width != width or image_height != height:
-            print(f"  [WARN] Unexpected dimensions: {image_width}x{image_height}, expected {width}x{height}")
-            return False
+        width = header_values[1]
+        height = header_values[2]
+        print(f"  Dimensions from header: {width}x{height}")
 
         palette_color_size = header_values[3]
         if palette_color_size not in [16, 256]:
@@ -165,9 +162,9 @@ def convert_16bit_palette_to_png(compressed_data, width, height, output_path, pa
         
         # Render based on palette count
         if palette_count == 1:
-            render_single_palette(pixel_indices, palette_entries, width, height, output_path, palette_format)
+            render_single_palette(pixel_indices, palette_entries, width, height, output_path)
         else:
-            render_multiple_palettes(pixel_indices, palette_entries, palette_count, width, height, output_path, palette_format, palette_color_size)
+            render_multiple_palettes(pixel_indices, palette_entries, palette_count, width, height, output_path, palette_color_size)
         
         return True
         
@@ -177,23 +174,24 @@ def convert_16bit_palette_to_png(compressed_data, width, height, output_path, pa
 
 def handle_compressed_image(file_info, data, output_path, filename):
     """Handle extraction and conversion of compressed images."""
-    width = file_info['image_width']
-    height = file_info['image_height']
-    format_type = file_info.get('format', '24-bit')
-    has_palette = file_info.get('has_palette', False)
     size = len(data)
-    
-    if has_palette:
-        palette_format = file_info.get('palette_format', 'RGBA5551')
-        print(f"  Converting compressed image with palette: {filename} ({size:,} bytes) -> {width}x{height} PNG (palette: {palette_format})")
+
+    if 'format' in file_info and file_info['format'] in ['CI4', 'CI8']:
+        format_type = file_info['format']
+        print(f"  Converting {format_type} palette image: {filename} ({size:,} bytes)")
         
-        if convert_16bit_palette_to_png(data, width, height, output_path, palette_format):
+        if convert_16bit_palette_to_png(data, output_path):
             print(f"  [OK] Converted to PNG: {filename}")
             return True
         else:
             print(f"  [FAIL] Failed to convert: {filename}")
             return False
-    else:
+
+    elif 'image_width' in file_info and 'image_height' in file_info:
+        width = file_info['image_width']
+        height = file_info['image_height']
+        format_type = file_info.get('format', '24-bit')
+        
         print(f"  Converting compressed image: {filename} ({size:,} bytes) -> {width}x{height} {format_type} PNG")
         
         if convert_compressed_binary_to_png(data, width, height, output_path, format_type):
@@ -202,6 +200,12 @@ def handle_compressed_image(file_info, data, output_path, filename):
         else:
             print(f"  [FAIL] Failed to convert: {filename}")
             return False
+    else:
+        # Unknown format - save as raw data
+        print(f"  Unknown image format for {filename}, saving as raw data")
+        with open(output_path, 'wb') as out:
+            out.write(data)
+        return True
 
 def calculate_file_size(file_info, file_type, start_addr, end_addr):
     """Calculate the size to read for a file based on its type and compression."""
@@ -217,8 +221,12 @@ def calculate_file_size(file_info, file_type, start_addr, end_addr):
         else:
             # For compressed text, use compressed_size
             return file_info.get('compressed_size', 0)
+    elif 'is_compressed' in file_info:
+        # If is_compressed flag exists (regardless of true/false), subtract 8-byte footer
+        return end_addr - start_addr + 1 - 8
     else:
-        return file_info.get('decompressed_size_bytes', file_info.get('size_bytes', 0))
+        # For files without is_compressed flag, read full data
+        return end_addr - start_addr + 1
 
 def handle_text_extraction(file_info, data, output_path, filename):
     """Handle text extraction for both compressed and uncompressed text blocks."""
@@ -295,7 +303,7 @@ def convert_compressed_binary_to_png(compressed_data, width, height, output_path
             pixels = pixels.reshape((height, width, bytes_per_pixel))
         
         # Create PIL Image and save as PNG
-        img = Image.fromarray(pixels, pil_mode)
+        img = Image.fromarray(pixels)
         img.save(output_path, 'PNG')
         
         return True
@@ -353,7 +361,7 @@ def extract_from_file_table(rom_path, file_table_json, output_dir="extracted", f
                 out_path = os.path.join(type_dir, filename)
                 
                 # Special handling for compressed images
-                if file_type == 'compressed_images' and 'image_width' in file_info and 'image_height' in file_info:
+                if file_type == 'compressed_images':
                     if not handle_compressed_image(file_info, data, out_path, filename):
                         # Fallback: save raw data
                         with open(out_path, 'wb') as out:
@@ -366,8 +374,8 @@ def extract_from_file_table(rom_path, file_table_json, output_dir="extracted", f
                         text_blocks_data.append({
                             'start_addr': file_info['start_addr'],
                             'end_addr': file_info['end_addr'],
-                            'compressed_size': len(data) if file_info.get('compression') == 'uncompressed' else file_info['compressed_size'],
-                            'decompressed_size': len(data) if file_info.get('compression') == 'uncompressed' else file_info['decompressed_size'],
+                            'compressed_size': len(data) if file_info.get('compression') == 'uncompressed' else file_info.get('compressed_size', len(data)),
+                            'decompressed_size': len(data) if file_info.get('compression') == 'uncompressed' else file_info.get('decompressed_size', len(data)),
                             'filename': filename,
                             'content': text_content
                         })
