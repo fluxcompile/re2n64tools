@@ -17,7 +17,7 @@ This tool only works with the specific ROM version listed above. Other dumps (.v
 ## Usage
 
 ```bash
-python tools/extract_from_table.py re2.z64 tools/file_table.json extracted_assets
+python tools/extract_from_table.py re2.z64 file_table.json extracted_assets
 ```
 
 ## Notes
