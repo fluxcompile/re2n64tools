@@ -209,19 +209,7 @@ def handle_compressed_image(file_info, data, output_path, filename):
 
 def calculate_file_size(file_info, file_type, start_addr, end_addr):
     """Calculate the size to read for a file based on its type and compression."""
-    if file_type == 'text_blocks':
-        if file_info.get('compression') == 'uncompressed':
-            # For uncompressed text, use the size field
-            size = file_info.get('size', 0)
-            if size == 0:
-                # Fallback: calculate from address range
-                size = end_addr - start_addr + 1
-                print(f"  [DEBUG] Using calculated size for {file_info['filename']}: {size} bytes")
-            return size
-        else:
-            # For compressed text, use compressed_size
-            return file_info.get('compressed_size', 0)
-    elif 'is_compressed' in file_info:
+    if 'is_compressed' in file_info:
         # If is_compressed flag exists (regardless of true/false), subtract 8-byte footer
         return end_addr - start_addr + 1 - 8
     else:
@@ -231,15 +219,11 @@ def calculate_file_size(file_info, file_type, start_addr, end_addr):
 def handle_text_extraction(file_info, data, output_path, filename):
     """Handle text extraction for both compressed and uncompressed text blocks."""
     try:
-        # If compressed, decompress first
-        if file_info.get('compression') != 'uncompressed':
+        if file_info.get('is_compressed'):
             text_data = zlib.decompress(data)
         else:
             text_data = data
-        
-            # Debug: print raw bytes
-            print(f"  [DEBUG] Raw bytes for {filename}: {text_data.hex().upper()}")
-        
+
         # Convert to text and save
         text_content = text_data.decode('utf-8', errors='replace')
         
@@ -374,8 +358,6 @@ def extract_from_file_table(rom_path, file_table_json, output_dir="extracted", f
                         text_blocks_data.append({
                             'start_addr': file_info['start_addr'],
                             'end_addr': file_info['end_addr'],
-                            'compressed_size': len(data) if file_info.get('compression') == 'uncompressed' else file_info.get('compressed_size', len(data)),
-                            'decompressed_size': len(data) if file_info.get('compression') == 'uncompressed' else file_info.get('decompressed_size', len(data)),
                             'filename': filename,
                             'content': text_content
                         })
@@ -389,7 +371,7 @@ def extract_from_file_table(rom_path, file_table_json, output_dir="extracted", f
     if text_blocks_data:
         csv_path = os.path.join(output_dir, "text_blocks_summary.csv")
         with open(csv_path, 'w', newline='', encoding='utf-8') as csvfile:
-            fieldnames = ['start_addr', 'end_addr', 'compressed_size', 'decompressed_size', 'filename', 'content']
+            fieldnames = ['start_addr', 'end_addr', 'filename', 'content']
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
             writer.writeheader()
             for row in text_blocks_data:

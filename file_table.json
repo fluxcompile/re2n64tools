@@ -6,1620 +6,1551 @@
   "files": {
     "text_blocks": [
       {
+        "filename": "uncompressed_text_0x0142CFF2.txt",
+        "start_addr": "0x0142CFF2",
+        "end_addr": "0x0142D015",
+        "type": "text_blocks",
+        "is_compressed": false
+      },
+      {
         "filename": "text_block_0x0142D016.txt",
         "start_addr": "0x0142D016",
-        "end_addr": "0x0142D0B3",
-        "compressed_size": 158,
-        "decompressed_size": 217,
-        "type": "text_blocks"
+        "end_addr": "0x0142D0BB",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0142D0BC.txt",
         "start_addr": "0x0142D0BC",
-        "end_addr": "0x0142D167",
-        "compressed_size": 172,
-        "decompressed_size": 246,
-        "type": "text_blocks"
+        "end_addr": "0x0142D16F",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0142D170.txt",
         "start_addr": "0x0142D170",
-        "end_addr": "0x0142D1F9",
-        "compressed_size": 138,
-        "decompressed_size": 175,
-        "type": "text_blocks"
+        "end_addr": "0x0142D201",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0142D202.txt",
         "start_addr": "0x0142D202",
-        "end_addr": "0x0142D2B9",
-        "compressed_size": 184,
-        "decompressed_size": 245,
-        "type": "text_blocks"
+        "end_addr": "0x0142D2C1",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0142D2C2.txt",
         "start_addr": "0x0142D2C2",
-        "end_addr": "0x0142D35F",
-        "compressed_size": 158,
-        "decompressed_size": 202,
-        "type": "text_blocks"
+        "end_addr": "0x0142D367",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0142D368.txt",
         "start_addr": "0x0142D368",
-        "end_addr": "0x0142D3A9",
-        "compressed_size": 66,
-        "decompressed_size": 71,
-        "type": "text_blocks"
+        "end_addr": "0x0142D3B1",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0142D3B2.txt",
         "start_addr": "0x0142D3B2",
-        "end_addr": "0x0142D44D",
-        "compressed_size": 156,
-        "decompressed_size": 193,
-        "type": "text_blocks"
+        "end_addr": "0x0142D455",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0142D456.txt",
         "start_addr": "0x0142D456",
-        "end_addr": "0x0142D4E7",
-        "compressed_size": 146,
-        "decompressed_size": 189,
-        "type": "text_blocks"
+        "end_addr": "0x0142D4EF",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0142D4F0.txt",
         "start_addr": "0x0142D4F0",
-        "end_addr": "0x0142D5BD",
-        "compressed_size": 206,
-        "decompressed_size": 295,
-        "type": "text_blocks"
+        "end_addr": "0x0142D5C5",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0142D5C6.txt",
         "start_addr": "0x0142D5C6",
-        "end_addr": "0x0142D699",
-        "compressed_size": 212,
-        "decompressed_size": 323,
-        "type": "text_blocks"
+        "end_addr": "0x0142D6A1",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0142D6A2.txt",
         "start_addr": "0x0142D6A2",
-        "end_addr": "0x0142D753",
-        "compressed_size": 178,
-        "decompressed_size": 267,
-        "type": "text_blocks"
+        "end_addr": "0x0142D75B",
+        "type": "text_blocks",
+        "is_compressed": true
+      },
+      {
+        "filename": "uncompressed_text_0x0142D75C.txt",
+        "start_addr": "0x0142D75C",
+        "end_addr": "0x0142D77D",
+        "type": "text_blocks",
+        "is_compressed": false
       },
       {
         "filename": "text_block_0x0142D77E.txt",
         "start_addr": "0x0142D77E",
-        "end_addr": "0x0142D83B",
-        "compressed_size": 190,
-        "decompressed_size": 283,
-        "type": "text_blocks"
+        "end_addr": "0x0142D843",
+        "type": "text_blocks",
+        "is_compressed": true
+      },
+      {
+        "filename": "uncompressed_text_0x0142D844.txt",
+        "start_addr": "0x0142D844",
+        "end_addr": "0x0142D869",
+        "type": "text_blocks",
+        "is_compressed": false
       },
       {
         "filename": "text_block_0x0142D86A.txt",
         "start_addr": "0x0142D86A",
-        "end_addr": "0x0142D933",
-        "compressed_size": 202,
-        "decompressed_size": 289,
-        "type": "text_blocks"
+        "end_addr": "0x0142D93B",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0142D93C.txt",
         "start_addr": "0x0142D93C",
-        "end_addr": "0x0142D97F",
-        "compressed_size": 68,
-        "decompressed_size": 81,
-        "type": "text_blocks"
+        "end_addr": "0x0142D987",
+        "type": "text_blocks",
+        "is_compressed": true
+      },
+      {
+        "filename": "uncompressed_text_0x0142D988.txt",
+        "start_addr": "0x0142D988",
+        "end_addr": "0x0142D9B1",
+        "type": "text_blocks",
+        "is_compressed": false
       },
       {
         "filename": "text_block_0x0142D9B2.txt",
         "start_addr": "0x0142D9B2",
-        "end_addr": "0x0142DA81",
-        "compressed_size": 208,
-        "decompressed_size": 298,
-        "type": "text_blocks"
+        "end_addr": "0x0142DA89",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0142DA8A.txt",
         "start_addr": "0x0142DA8A",
-        "end_addr": "0x0142DB2D",
-        "compressed_size": 164,
-        "decompressed_size": 229,
-        "type": "text_blocks"
+        "end_addr": "0x0142DB35",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0142DB36.txt",
         "start_addr": "0x0142DB36",
-        "end_addr": "0x0142DBF3",
-        "compressed_size": 190,
-        "decompressed_size": 276,
-        "type": "text_blocks"
+        "end_addr": "0x0142DBFB",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0142DBFC.txt",
         "start_addr": "0x0142DBFC",
-        "end_addr": "0x0142DCBD",
-        "compressed_size": 194,
-        "decompressed_size": 285,
-        "type": "text_blocks"
+        "end_addr": "0x0142DCC5",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0142DCC6.txt",
         "start_addr": "0x0142DCC6",
-        "end_addr": "0x0142DD89",
-        "compressed_size": 196,
-        "decompressed_size": 305,
-        "type": "text_blocks"
+        "end_addr": "0x0142DD91",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0142DD92.txt",
         "start_addr": "0x0142DD92",
-        "end_addr": "0x0142DE59",
-        "compressed_size": 200,
-        "decompressed_size": 309,
-        "type": "text_blocks"
+        "end_addr": "0x0142DE61",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0142DE62.txt",
         "start_addr": "0x0142DE62",
-        "end_addr": "0x0142DF39",
-        "compressed_size": 216,
-        "decompressed_size": 323,
-        "type": "text_blocks"
+        "end_addr": "0x0142DF41",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0142DF42.txt",
         "start_addr": "0x0142DF42",
-        "end_addr": "0x0142E009",
-        "compressed_size": 200,
-        "decompressed_size": 306,
-        "type": "text_blocks"
+        "end_addr": "0x0142E011",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0142E012.txt",
         "start_addr": "0x0142E012",
-        "end_addr": "0x0142E0CD",
-        "compressed_size": 188,
-        "decompressed_size": 276,
-        "type": "text_blocks"
+        "end_addr": "0x0142E0D5",
+        "type": "text_blocks",
+        "is_compressed": true
+      },
+      {
+        "filename": "uncompressed_text_0x0142E0D6.txt",
+        "start_addr": "0x0142E0D6",
+        "end_addr": "0x0142E0FD",
+        "type": "text_blocks",
+        "is_compressed": false
       },
       {
         "filename": "text_block_0x0142E0FE.txt",
         "start_addr": "0x0142E0FE",
-        "end_addr": "0x0142E1C7",
-        "compressed_size": 202,
-        "decompressed_size": 278,
-        "type": "text_blocks"
+        "end_addr": "0x0142E1CF",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0142E1D0.txt",
         "start_addr": "0x0142E1D0",
-        "end_addr": "0x0142E2AB",
-        "compressed_size": 220,
-        "decompressed_size": 330,
-        "type": "text_blocks"
+        "end_addr": "0x0142E2B3",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0142E2B4.txt",
         "start_addr": "0x0142E2B4",
-        "end_addr": "0x0142E33F",
-        "compressed_size": 140,
-        "decompressed_size": 205,
-        "type": "text_blocks"
+        "end_addr": "0x0142E347",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0142E348.txt",
         "start_addr": "0x0142E348",
-        "end_addr": "0x0142E41D",
-        "compressed_size": 214,
-        "decompressed_size": 308,
-        "type": "text_blocks"
+        "end_addr": "0x0142E425",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0142E426.txt",
         "start_addr": "0x0142E426",
-        "end_addr": "0x0142E4F5",
-        "compressed_size": 208,
-        "decompressed_size": 314,
-        "type": "text_blocks"
+        "end_addr": "0x0142E4FD",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0142E4FE.txt",
         "start_addr": "0x0142E4FE",
-        "end_addr": "0x0142E551",
-        "compressed_size": 84,
-        "decompressed_size": 101,
-        "type": "text_blocks"
+        "end_addr": "0x0142E559",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0142E55A.txt",
         "start_addr": "0x0142E55A",
-        "end_addr": "0x0142E639",
-        "compressed_size": 224,
-        "decompressed_size": 310,
-        "type": "text_blocks"
+        "end_addr": "0x0142E641",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0142E642.txt",
         "start_addr": "0x0142E642",
-        "end_addr": "0x0142E711",
-        "compressed_size": 208,
-        "decompressed_size": 306,
-        "type": "text_blocks"
+        "end_addr": "0x0142E719",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0142E71A.txt",
         "start_addr": "0x0142E71A",
-        "end_addr": "0x0142E77D",
-        "compressed_size": 100,
-        "decompressed_size": 121,
-        "type": "text_blocks"
+        "end_addr": "0x0142E785",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0142E786.txt",
         "start_addr": "0x0142E786",
-        "end_addr": "0x0142E84D",
-        "compressed_size": 200,
-        "decompressed_size": 266,
-        "type": "text_blocks"
+        "end_addr": "0x0142E855",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "uncompressed_text_0x0142E856.txt",
         "start_addr": "0x0142E856",
-        "end_addr": "0x0142E875",
-        "size": 32,
+        "end_addr": "0x0142E87D",
         "type": "text_blocks",
-        "compression": "uncompressed"
+        "is_compressed": false
       },
       {
         "filename": "text_block_0x0142E87E.txt",
         "start_addr": "0x0142E87E",
-        "end_addr": "0x0142E927",
-        "compressed_size": 170,
-        "decompressed_size": 255,
-        "type": "text_blocks"
+        "end_addr": "0x0142E92F",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0142E930.txt",
         "start_addr": "0x0142E930",
-        "end_addr": "0x0142E99B",
-        "compressed_size": 108,
-        "decompressed_size": 134,
-        "type": "text_blocks"
+        "end_addr": "0x0142E9A3",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0142E9A4.txt",
         "start_addr": "0x0142E9A4",
-        "end_addr": "0x0142EA4D",
-        "compressed_size": 170,
-        "decompressed_size": 249,
-        "type": "text_blocks"
+        "end_addr": "0x0142EA55",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "uncompressed_text_0x0142EA56.txt",
         "start_addr": "0x0142EA56",
-        "end_addr": "0x0142EA8F",
-        "size": 58,
+        "end_addr": "0x0142EA97",
         "type": "text_blocks",
-        "compression": "uncompressed"
+        "is_compressed": false
       },
       {
         "filename": "text_block_0x0142EA98.txt",
         "start_addr": "0x0142EA98",
-        "end_addr": "0x0142EB3F",
-        "compressed_size": 168,
-        "decompressed_size": 251,
-        "type": "text_blocks"
+        "end_addr": "0x0142EB47",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0142EB48.txt",
         "start_addr": "0x0142EB48",
-        "end_addr": "0x0142EBCF",
-        "compressed_size": 136,
-        "decompressed_size": 195,
-        "type": "text_blocks"
+        "end_addr": "0x0142EBD7",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "uncompressed_text_0x0142EBD8.txt",
         "start_addr": "0x0142EBD8",
-        "end_addr": "0x0142EBF7",
-        "size": 32,
+        "end_addr": "0x0142EBFF",
         "type": "text_blocks",
-        "compression": "uncompressed"
+        "is_compressed": false
       },
       {
         "filename": "text_block_0x0142EC00.txt",
         "start_addr": "0x0142EC00",
-        "end_addr": "0x0142ECAD",
-        "compressed_size": 174,
-        "decompressed_size": 247,
-        "type": "text_blocks"
+        "end_addr": "0x0142ECB5",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0142ECB6.txt",
         "start_addr": "0x0142ECB6",
-        "end_addr": "0x0142ED39",
-        "compressed_size": 132,
-        "decompressed_size": 183,
-        "type": "text_blocks"
+        "end_addr": "0x0142ED41",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0142ED42.txt",
         "start_addr": "0x0142ED42",
-        "end_addr": "0x0142EDEF",
-        "compressed_size": 174,
-        "decompressed_size": 242,
-        "type": "text_blocks"
+        "end_addr": "0x0142EDF7",
+        "type": "text_blocks",
+        "is_compressed": true
+      },
+      {
+        "filename": "uncompressed_text_0x0142EDF8.txt",
+        "start_addr": "0x0142EDF8",
+        "end_addr": "0x0142EE01",
+        "type": "text_blocks",
+        "is_compressed": false
       },
       {
         "filename": "text_block_0x0142EE02.txt",
         "start_addr": "0x0142EE02",
-        "end_addr": "0x0142EE25",
-        "compressed_size": 36,
-        "decompressed_size": 45,
-        "type": "text_blocks"
+        "end_addr": "0x0142EE2D",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0142EE2E.txt",
         "start_addr": "0x0142EE2E",
-        "end_addr": "0x0142EF01",
-        "compressed_size": 212,
-        "decompressed_size": 323,
-        "type": "text_blocks"
+        "end_addr": "0x0142EF09",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0142EF0A.txt",
         "start_addr": "0x0142EF0A",
-        "end_addr": "0x0142EFCB",
-        "compressed_size": 194,
-        "decompressed_size": 313,
-        "type": "text_blocks"
+        "end_addr": "0x0142EFD3",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0142EFD4.txt",
         "start_addr": "0x0142EFD4",
-        "end_addr": "0x0142F0A1",
-        "compressed_size": 206,
-        "decompressed_size": 327,
-        "type": "text_blocks"
+        "end_addr": "0x0142F0A9",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0142F0AA.txt",
         "start_addr": "0x0142F0AA",
-        "end_addr": "0x0142F155",
-        "compressed_size": 172,
-        "decompressed_size": 251,
-        "type": "text_blocks"
+        "end_addr": "0x0142F15D",
+        "type": "text_blocks",
+        "is_compressed": true
+      },
+      {
+        "filename": "uncompressed_text_0x0142F15E.txt",
+        "start_addr": "0x0142F15E",
+        "end_addr": "0x0142F183",
+        "type": "text_blocks",
+        "is_compressed": false
       },
       {
         "filename": "text_block_0x0142F184.txt",
         "start_addr": "0x0142F184",
-        "end_addr": "0x0142F203",
-        "compressed_size": 128,
-        "decompressed_size": 149,
-        "type": "text_blocks"
+        "end_addr": "0x0142F20B",
+        "type": "text_blocks",
+        "is_compressed": true
+      },
+      {
+        "filename": "uncompressed_text_0x0142F20C.txt",
+        "start_addr": "0x0142F20C",
+        "end_addr": "0x0142F225",
+        "type": "text_blocks",
+        "is_compressed": false
+      },
+      {
+        "filename": "uncompressed_text_0x0142F226.txt",
+        "start_addr": "0x0142F226",
+        "end_addr": "0x0142F261",
+        "type": "text_blocks",
+        "is_compressed": false
+      },
+      {
+        "filename": "uncompressed_text_0x0142F262.txt",
+        "start_addr": "0x0142F262",
+        "end_addr": "0x0142F27B",
+        "type": "text_blocks",
+        "is_compressed": false
       },
       {
         "filename": "text_block_0x0142F27C.txt",
         "start_addr": "0x0142F27C",
-        "end_addr": "0x0142F2EF",
-        "compressed_size": 116,
-        "decompressed_size": 132,
-        "type": "text_blocks"
+        "end_addr": "0x0142F2F7",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0142F2F8.txt",
         "start_addr": "0x0142F2F8",
-        "end_addr": "0x0142F373",
-        "compressed_size": 124,
-        "decompressed_size": 157,
-        "type": "text_blocks"
+        "end_addr": "0x0142F37B",
+        "type": "text_blocks",
+        "is_compressed": true
+      },
+      {
+        "filename": "uncompressed_text_0x0142F37C.txt",
+        "start_addr": "0x0142F37C",
+        "end_addr": "0x0142F395",
+        "type": "text_blocks",
+        "is_compressed": false
       },
       {
         "filename": "text_block_0x0142F396.txt",
         "start_addr": "0x0142F396",
-        "end_addr": "0x0142F42D",
-        "compressed_size": 152,
-        "decompressed_size": 202,
-        "type": "text_blocks"
+        "end_addr": "0x0142F435",
+        "type": "text_blocks",
+        "is_compressed": true
+      },
+      {
+        "filename": "uncompressed_text_0x0142F436.txt",
+        "start_addr": "0x0142F436",
+        "end_addr": "0x0142F459",
+        "type": "text_blocks",
+        "is_compressed": false
       },
       {
         "filename": "text_block_0x0142F45A.txt",
         "start_addr": "0x0142F45A",
-        "end_addr": "0x0142F503",
-        "compressed_size": 170,
-        "decompressed_size": 223,
-        "type": "text_blocks"
+        "end_addr": "0x0142F50B",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0142F50C.txt",
         "start_addr": "0x0142F50C",
-        "end_addr": "0x0142F55D",
-        "compressed_size": 82,
-        "decompressed_size": 84,
-        "type": "text_blocks"
+        "end_addr": "0x0142F565",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0142F566.txt",
         "start_addr": "0x0142F566",
-        "end_addr": "0x0142F5FF",
-        "compressed_size": 154,
-        "decompressed_size": 197,
-        "type": "text_blocks"
+        "end_addr": "0x0142F607",
+        "type": "text_blocks",
+        "is_compressed": true
+      },
+      {
+        "filename": "uncompressed_text_0x0142F608.txt",
+        "start_addr": "0x0142F608",
+        "end_addr": "0x0142F62D",
+        "type": "text_blocks",
+        "is_compressed": false
       },
       {
         "filename": "text_block_0x0142F62E.txt",
         "start_addr": "0x0142F62E",
-        "end_addr": "0x0142F6F1",
-        "compressed_size": 196,
-        "decompressed_size": 284,
-        "type": "text_blocks"
+        "end_addr": "0x0142F6F9",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0142F6FA.txt",
         "start_addr": "0x0142F6FA",
-        "end_addr": "0x0142F787",
-        "compressed_size": 142,
-        "decompressed_size": 206,
-        "type": "text_blocks"
+        "end_addr": "0x0142F78F",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0142F790.txt",
         "start_addr": "0x0142F790",
-        "end_addr": "0x0142F85D",
-        "compressed_size": 206,
-        "decompressed_size": 310,
-        "type": "text_blocks"
+        "end_addr": "0x0142F865",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0142F866.txt",
         "start_addr": "0x0142F866",
-        "end_addr": "0x0142F919",
-        "compressed_size": 180,
-        "decompressed_size": 259,
-        "type": "text_blocks"
+        "end_addr": "0x0142F921",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0142F922.txt",
         "start_addr": "0x0142F922",
-        "end_addr": "0x0142F9EF",
-        "compressed_size": 206,
-        "decompressed_size": 303,
-        "type": "text_blocks"
+        "end_addr": "0x0142F9F7",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0142F9F8.txt",
         "start_addr": "0x0142F9F8",
-        "end_addr": "0x0142FA63",
-        "compressed_size": 108,
-        "decompressed_size": 125,
-        "type": "text_blocks"
+        "end_addr": "0x0142FA6B",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0142FA6C.txt",
         "start_addr": "0x0142FA6C",
-        "end_addr": "0x0142FB25",
-        "compressed_size": 186,
-        "decompressed_size": 267,
-        "type": "text_blocks"
+        "end_addr": "0x0142FB2D",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0142FB2E.txt",
         "start_addr": "0x0142FB2E",
-        "end_addr": "0x0142FBAF",
-        "compressed_size": 130,
-        "decompressed_size": 164,
-        "type": "text_blocks"
+        "end_addr": "0x0142FBB7",
+        "type": "text_blocks",
+        "is_compressed": true
+      },
+      {
+        "filename": "uncompressed_text_0x0142FBB8.txt",
+        "start_addr": "0x0142FBB8",
+        "end_addr": "0x0142FBDB",
+        "type": "text_blocks",
+        "is_compressed": false
       },
       {
         "filename": "text_block_0x0142FBDC.txt",
         "start_addr": "0x0142FBDC",
-        "end_addr": "0x0142FCB7",
-        "compressed_size": 220,
-        "decompressed_size": 322,
-        "type": "text_blocks"
+        "end_addr": "0x0142FCBF",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0142FCC0.txt",
         "start_addr": "0x0142FCC0",
-        "end_addr": "0x0142FD89",
-        "compressed_size": 202,
-        "decompressed_size": 310,
-        "type": "text_blocks"
+        "end_addr": "0x0142FD91",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0142FD92.txt",
         "start_addr": "0x0142FD92",
-        "end_addr": "0x0142FE19",
-        "compressed_size": 136,
-        "decompressed_size": 177,
-        "type": "text_blocks"
+        "end_addr": "0x0142FE21",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0142FE22.txt",
         "start_addr": "0x0142FE22",
-        "end_addr": "0x0142FEE9",
-        "compressed_size": 200,
-        "decompressed_size": 294,
-        "type": "text_blocks"
+        "end_addr": "0x0142FEF1",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0142FEF2.txt",
         "start_addr": "0x0142FEF2",
-        "end_addr": "0x0142FFAF",
-        "compressed_size": 190,
-        "decompressed_size": 275,
-        "type": "text_blocks"
+        "end_addr": "0x0142FFB7",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "uncompressed_text_0x0142FFB8.txt",
         "start_addr": "0x0142FFB8",
-        "end_addr": "0x0142FFF9",
-        "size": 66,
+        "end_addr": "0x01430001",
         "type": "text_blocks",
-        "compression": "uncompressed"
+        "is_compressed": false
+      },
+      {
+        "filename": "uncompressed_text_0x01430002.txt",
+        "start_addr": "0x01430002",
+        "end_addr": "0x01430029",
+        "type": "text_blocks",
+        "is_compressed": false
       },
       {
         "filename": "text_block_0x0143002A.txt",
         "start_addr": "0x0143002A",
-        "end_addr": "0x014300FB",
-        "compressed_size": 210,
-        "decompressed_size": 305,
-        "type": "text_blocks"
+        "end_addr": "0x01430103",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01430104.txt",
         "start_addr": "0x01430104",
-        "end_addr": "0x0143016B",
-        "compressed_size": 104,
-        "decompressed_size": 116,
-        "type": "text_blocks"
+        "end_addr": "0x01430173",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01430174.txt",
         "start_addr": "0x01430174",
-        "end_addr": "0x0143023B",
-        "compressed_size": 200,
-        "decompressed_size": 284,
-        "type": "text_blocks"
+        "end_addr": "0x01430243",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01430244.txt",
         "start_addr": "0x01430244",
-        "end_addr": "0x014302A7",
-        "compressed_size": 100,
-        "decompressed_size": 112,
-        "type": "text_blocks"
+        "end_addr": "0x014302AF",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x014302B0.txt",
         "start_addr": "0x014302B0",
-        "end_addr": "0x0143032F",
-        "compressed_size": 128,
-        "decompressed_size": 157,
-        "type": "text_blocks"
+        "end_addr": "0x01430337",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01430338.txt",
         "start_addr": "0x01430338",
-        "end_addr": "0x0143040B",
-        "compressed_size": 212,
-        "decompressed_size": 306,
-        "type": "text_blocks"
+        "end_addr": "0x01430413",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01430414.txt",
         "start_addr": "0x01430414",
-        "end_addr": "0x01430479",
-        "compressed_size": 102,
-        "decompressed_size": 118,
-        "type": "text_blocks"
+        "end_addr": "0x01430481",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01430482.txt",
         "start_addr": "0x01430482",
-        "end_addr": "0x01430543",
-        "compressed_size": 194,
-        "decompressed_size": 307,
-        "type": "text_blocks"
+        "end_addr": "0x0143054B",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0143054C.txt",
         "start_addr": "0x0143054C",
-        "end_addr": "0x014305EB",
-        "compressed_size": 160,
-        "decompressed_size": 228,
-        "type": "text_blocks"
+        "end_addr": "0x014305F3",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x014305F4.txt",
         "start_addr": "0x014305F4",
-        "end_addr": "0x01430611",
-        "compressed_size": 30,
-        "decompressed_size": 33,
-        "type": "text_blocks"
+        "end_addr": "0x01430619",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0143061A.txt",
         "start_addr": "0x0143061A",
-        "end_addr": "0x014306DB",
-        "compressed_size": 194,
-        "decompressed_size": 288,
-        "type": "text_blocks"
+        "end_addr": "0x014306E3",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x014306E4.txt",
         "start_addr": "0x014306E4",
-        "end_addr": "0x01430795",
-        "compressed_size": 178,
-        "decompressed_size": 248,
-        "type": "text_blocks"
+        "end_addr": "0x0143079D",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0143079E.txt",
         "start_addr": "0x0143079E",
-        "end_addr": "0x01430853",
-        "compressed_size": 182,
-        "decompressed_size": 257,
-        "type": "text_blocks"
+        "end_addr": "0x0143085B",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0143085C.txt",
         "start_addr": "0x0143085C",
-        "end_addr": "0x0143092D",
-        "compressed_size": 210,
-        "decompressed_size": 300,
-        "type": "text_blocks"
+        "end_addr": "0x01430935",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01430936.txt",
         "start_addr": "0x01430936",
-        "end_addr": "0x014309C1",
-        "compressed_size": 140,
-        "decompressed_size": 206,
-        "type": "text_blocks"
+        "end_addr": "0x014309C9",
+        "type": "text_blocks",
+        "is_compressed": true
+      },
+      {
+        "filename": "uncompressed_text_0x014309CA.txt",
+        "start_addr": "0x014309CA",
+        "end_addr": "0x014309E3",
+        "type": "text_blocks",
+        "is_compressed": false
       },
       {
         "filename": "text_block_0x014309E4.txt",
         "start_addr": "0x014309E4",
-        "end_addr": "0x01430A3D",
-        "compressed_size": 90,
-        "decompressed_size": 100,
-        "type": "text_blocks"
+        "end_addr": "0x01430A45",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01430A46.txt",
         "start_addr": "0x01430A46",
-        "end_addr": "0x01430B0F",
-        "compressed_size": 202,
-        "decompressed_size": 295,
-        "type": "text_blocks"
+        "end_addr": "0x01430B17",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01430B18.txt",
         "start_addr": "0x01430B18",
-        "end_addr": "0x01430BE3",
-        "compressed_size": 204,
-        "decompressed_size": 314,
-        "type": "text_blocks"
+        "end_addr": "0x01430BEB",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01430BEC.txt",
         "start_addr": "0x01430BEC",
-        "end_addr": "0x01430C45",
-        "compressed_size": 90,
-        "decompressed_size": 95,
-        "type": "text_blocks"
+        "end_addr": "0x01430C4D",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01430C4E.txt",
         "start_addr": "0x01430C4E",
-        "end_addr": "0x01430D19",
-        "compressed_size": 204,
-        "decompressed_size": 318,
-        "type": "text_blocks"
+        "end_addr": "0x01430D21",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01430D22.txt",
         "start_addr": "0x01430D22",
-        "end_addr": "0x01430DFB",
-        "compressed_size": 218,
-        "decompressed_size": 324,
-        "type": "text_blocks"
+        "end_addr": "0x01430E03",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01430E04.txt",
         "start_addr": "0x01430E04",
-        "end_addr": "0x01430EC7",
-        "compressed_size": 196,
-        "decompressed_size": 270,
-        "type": "text_blocks"
+        "end_addr": "0x01430ECF",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "uncompressed_text_0x01430ED0.txt",
         "start_addr": "0x01430ED0",
-        "end_addr": "0x01430EF3",
-        "size": 36,
+        "end_addr": "0x01430EFB",
         "type": "text_blocks",
-        "compression": "uncompressed"
+        "is_compressed": false
       },
       {
         "filename": "text_block_0x01430EFC.txt",
         "start_addr": "0x01430EFC",
-        "end_addr": "0x01430F9D",
-        "compressed_size": 162,
-        "decompressed_size": 231,
-        "type": "text_blocks"
+        "end_addr": "0x01430FA5",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01430FA6.txt",
         "start_addr": "0x01430FA6",
-        "end_addr": "0x01431059",
-        "compressed_size": 180,
-        "decompressed_size": 277,
-        "type": "text_blocks"
+        "end_addr": "0x01431061",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01431062.txt",
         "start_addr": "0x01431062",
-        "end_addr": "0x0143111D",
-        "compressed_size": 188,
-        "decompressed_size": 288,
-        "type": "text_blocks"
+        "end_addr": "0x01431125",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01431126.txt",
         "start_addr": "0x01431126",
-        "end_addr": "0x014311D3",
-        "compressed_size": 174,
-        "decompressed_size": 255,
-        "type": "text_blocks"
+        "end_addr": "0x014311DB",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x014311DC.txt",
         "start_addr": "0x014311DC",
-        "end_addr": "0x01431249",
-        "compressed_size": 110,
-        "decompressed_size": 135,
-        "type": "text_blocks"
+        "end_addr": "0x01431251",
+        "type": "text_blocks",
+        "is_compressed": true
+      },
+      {
+        "filename": "uncompressed_text_0x01431252.txt",
+        "start_addr": "0x01431252",
+        "end_addr": "0x01431291",
+        "type": "text_blocks",
+        "is_compressed": false
       },
       {
         "filename": "text_block_0x01431292.txt",
         "start_addr": "0x01431292",
-        "end_addr": "0x01431355",
-        "compressed_size": 196,
-        "decompressed_size": 264,
-        "type": "text_blocks"
+        "end_addr": "0x0143135D",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0143135E.txt",
         "start_addr": "0x0143135E",
-        "end_addr": "0x01431425",
-        "compressed_size": 200,
-        "decompressed_size": 276,
-        "type": "text_blocks"
+        "end_addr": "0x0143142D",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0143142E.txt",
         "start_addr": "0x0143142E",
-        "end_addr": "0x014314DD",
-        "compressed_size": 176,
-        "decompressed_size": 251,
-        "type": "text_blocks"
+        "end_addr": "0x014314E5",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x014314E6.txt",
         "start_addr": "0x014314E6",
-        "end_addr": "0x01431579",
-        "compressed_size": 148,
-        "decompressed_size": 191,
-        "type": "text_blocks"
+        "end_addr": "0x01431581",
+        "type": "text_blocks",
+        "is_compressed": true
+      },
+      {
+        "filename": "uncompressed_text_0x01431582.txt",
+        "start_addr": "0x01431582",
+        "end_addr": "0x014315AF",
+        "type": "text_blocks",
+        "is_compressed": false
       },
       {
         "filename": "text_block_0x014315B0.txt",
         "start_addr": "0x014315B0",
-        "end_addr": "0x0143160F",
-        "compressed_size": 96,
-        "decompressed_size": 102,
-        "type": "text_blocks"
+        "end_addr": "0x01431617",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01431618.txt",
         "start_addr": "0x01431618",
-        "end_addr": "0x0143169B",
-        "compressed_size": 132,
-        "decompressed_size": 174,
-        "type": "text_blocks"
+        "end_addr": "0x014316A3",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x014316A4.txt",
         "start_addr": "0x014316A4",
-        "end_addr": "0x0143171D",
-        "compressed_size": 122,
-        "decompressed_size": 166,
-        "type": "text_blocks"
+        "end_addr": "0x01431725",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01431726.txt",
         "start_addr": "0x01431726",
-        "end_addr": "0x01431799",
-        "compressed_size": 116,
-        "decompressed_size": 149,
-        "type": "text_blocks"
+        "end_addr": "0x014317A1",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x014317A2.txt",
         "start_addr": "0x014317A2",
-        "end_addr": "0x01431817",
-        "compressed_size": 118,
-        "decompressed_size": 151,
-        "type": "text_blocks"
+        "end_addr": "0x0143181F",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01431820.txt",
         "start_addr": "0x01431820",
-        "end_addr": "0x0143188F",
-        "compressed_size": 112,
-        "decompressed_size": 134,
-        "type": "text_blocks"
+        "end_addr": "0x01431897",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01431898.txt",
         "start_addr": "0x01431898",
-        "end_addr": "0x0143191D",
-        "compressed_size": 134,
-        "decompressed_size": 190,
-        "type": "text_blocks"
+        "end_addr": "0x01431925",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01431926.txt",
         "start_addr": "0x01431926",
-        "end_addr": "0x0143199B",
-        "compressed_size": 118,
-        "decompressed_size": 142,
-        "type": "text_blocks"
+        "end_addr": "0x014319A3",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x014319A4.txt",
         "start_addr": "0x014319A4",
-        "end_addr": "0x01431A2F",
-        "compressed_size": 140,
-        "decompressed_size": 195,
-        "type": "text_blocks"
+        "end_addr": "0x01431A37",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01431A38.txt",
         "start_addr": "0x01431A38",
-        "end_addr": "0x01431AE9",
-        "compressed_size": 178,
-        "decompressed_size": 253,
-        "type": "text_blocks"
+        "end_addr": "0x01431AF1",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01431AF2.txt",
         "start_addr": "0x01431AF2",
-        "end_addr": "0x01431B5D",
-        "compressed_size": 108,
-        "decompressed_size": 129,
-        "type": "text_blocks"
+        "end_addr": "0x01431B65",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01431B66.txt",
         "start_addr": "0x01431B66",
-        "end_addr": "0x01431BE7",
-        "compressed_size": 130,
-        "decompressed_size": 217,
-        "type": "text_blocks"
+        "end_addr": "0x01431BEF",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01431BF0.txt",
         "start_addr": "0x01431BF0",
-        "end_addr": "0x01431C99",
-        "compressed_size": 170,
-        "decompressed_size": 265,
-        "type": "text_blocks"
+        "end_addr": "0x01431CA1",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "uncompressed_text_0x01431CA2.txt",
         "start_addr": "0x01431CA2",
-        "end_addr": "0x01431CCD",
-        "size": 44,
+        "end_addr": "0x01431CD5",
         "type": "text_blocks",
-        "compression": "uncompressed"
+        "is_compressed": false
       },
       {
         "filename": "text_block_0x01431CD6.txt",
         "start_addr": "0x01431CD6",
-        "end_addr": "0x01431D83",
-        "compressed_size": 174,
-        "decompressed_size": 264,
-        "type": "text_blocks"
+        "end_addr": "0x01431D8B",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01431D8C.txt",
         "start_addr": "0x01431D8C",
-        "end_addr": "0x01431E27",
-        "compressed_size": 156,
-        "decompressed_size": 236,
-        "type": "text_blocks"
+        "end_addr": "0x01431E2F",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01431E30.txt",
         "start_addr": "0x01431E30",
-        "end_addr": "0x01431EC1",
-        "compressed_size": 146,
-        "decompressed_size": 212,
-        "type": "text_blocks"
+        "end_addr": "0x01431EC9",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01431ECA.txt",
         "start_addr": "0x01431ECA",
-        "end_addr": "0x01431F59",
-        "compressed_size": 144,
-        "decompressed_size": 209,
-        "type": "text_blocks"
+        "end_addr": "0x01431F61",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01431F62.txt",
         "start_addr": "0x01431F62",
-        "end_addr": "0x01432015",
-        "compressed_size": 180,
-        "decompressed_size": 259,
-        "type": "text_blocks"
+        "end_addr": "0x0143201D",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0143201E.txt",
         "start_addr": "0x0143201E",
-        "end_addr": "0x014320B7",
-        "compressed_size": 154,
-        "decompressed_size": 231,
-        "type": "text_blocks"
+        "end_addr": "0x014320BF",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x014320C0.txt",
         "start_addr": "0x014320C0",
-        "end_addr": "0x01432167",
-        "compressed_size": 168,
-        "decompressed_size": 264,
-        "type": "text_blocks"
+        "end_addr": "0x0143216F",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01432170.txt",
         "start_addr": "0x01432170",
-        "end_addr": "0x0143220B",
-        "compressed_size": 156,
-        "decompressed_size": 223,
-        "type": "text_blocks"
+        "end_addr": "0x01432213",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01432214.txt",
         "start_addr": "0x01432214",
-        "end_addr": "0x014322B7",
-        "compressed_size": 164,
-        "decompressed_size": 229,
-        "type": "text_blocks"
+        "end_addr": "0x014322BF",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x014322C0.txt",
         "start_addr": "0x014322C0",
-        "end_addr": "0x01432379",
-        "compressed_size": 186,
-        "decompressed_size": 271,
-        "type": "text_blocks"
+        "end_addr": "0x01432381",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01432382.txt",
         "start_addr": "0x01432382",
-        "end_addr": "0x01432417",
-        "compressed_size": 150,
-        "decompressed_size": 223,
-        "type": "text_blocks"
+        "end_addr": "0x0143241F",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01432420.txt",
         "start_addr": "0x01432420",
-        "end_addr": "0x014324B5",
-        "compressed_size": 150,
-        "decompressed_size": 232,
-        "type": "text_blocks"
+        "end_addr": "0x014324BD",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x014324BE.txt",
         "start_addr": "0x014324BE",
-        "end_addr": "0x0143256B",
-        "compressed_size": 174,
-        "decompressed_size": 247,
-        "type": "text_blocks"
+        "end_addr": "0x01432573",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01432574.txt",
         "start_addr": "0x01432574",
-        "end_addr": "0x014325E7",
-        "compressed_size": 116,
-        "decompressed_size": 146,
-        "type": "text_blocks"
+        "end_addr": "0x014325EF",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x014325F0.txt",
         "start_addr": "0x014325F0",
-        "end_addr": "0x0143261B",
-        "compressed_size": 44,
-        "decompressed_size": 53,
-        "type": "text_blocks"
+        "end_addr": "0x01432623",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01432624.txt",
         "start_addr": "0x01432624",
-        "end_addr": "0x014326F5",
-        "compressed_size": 210,
-        "decompressed_size": 305,
-        "type": "text_blocks"
+        "end_addr": "0x014326FD",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x014326FE.txt",
         "start_addr": "0x014326FE",
-        "end_addr": "0x014327C9",
-        "compressed_size": 204,
-        "decompressed_size": 302,
-        "type": "text_blocks"
+        "end_addr": "0x014327D1",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x014327D2.txt",
         "start_addr": "0x014327D2",
-        "end_addr": "0x01432853",
-        "compressed_size": 130,
-        "decompressed_size": 153,
-        "type": "text_blocks"
+        "end_addr": "0x0143285B",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0143285C.txt",
         "start_addr": "0x0143285C",
-        "end_addr": "0x0143288F",
-        "compressed_size": 52,
-        "decompressed_size": 57,
-        "type": "text_blocks"
+        "end_addr": "0x01432897",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01432898.txt",
         "start_addr": "0x01432898",
-        "end_addr": "0x0143294B",
-        "compressed_size": 180,
-        "decompressed_size": 255,
-        "type": "text_blocks"
+        "end_addr": "0x01432953",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01432954.txt",
         "start_addr": "0x01432954",
-        "end_addr": "0x01432A0B",
-        "compressed_size": 184,
-        "decompressed_size": 261,
-        "type": "text_blocks"
+        "end_addr": "0x01432A13",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "uncompressed_text_0x01432A15.txt",
         "start_addr": "0x01432A15",
-        "end_addr": "0x01432A51",
-        "size": 61,
+        "end_addr": "0x01432A59",
         "type": "text_blocks",
-        "compression": "uncompressed"
+        "is_compressed": false
       },
       {
         "filename": "text_block_0x01432A5A.txt",
         "start_addr": "0x01432A5A",
-        "end_addr": "0x01432A8B",
-        "compressed_size": 50,
-        "decompressed_size": 57,
-        "type": "text_blocks"
+        "end_addr": "0x01432A93",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01432A94.txt",
         "start_addr": "0x01432A94",
-        "end_addr": "0x01432B51",
-        "compressed_size": 190,
-        "decompressed_size": 270,
-        "type": "text_blocks"
+        "end_addr": "0x01432B59",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01432B5A.txt",
         "start_addr": "0x01432B5A",
-        "end_addr": "0x01432BE5",
-        "compressed_size": 140,
-        "decompressed_size": 178,
-        "type": "text_blocks"
+        "end_addr": "0x01432BED",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01432BEE.txt",
         "start_addr": "0x01432BEE",
-        "end_addr": "0x01432C19",
-        "compressed_size": 44,
-        "decompressed_size": 51,
-        "type": "text_blocks"
+        "end_addr": "0x01432C21",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01432C22.txt",
         "start_addr": "0x01432C22",
-        "end_addr": "0x01432CF9",
-        "compressed_size": 216,
-        "decompressed_size": 319,
-        "type": "text_blocks"
+        "end_addr": "0x01432D01",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01432D02.txt",
         "start_addr": "0x01432D02",
-        "end_addr": "0x01432DB5",
-        "compressed_size": 180,
-        "decompressed_size": 246,
-        "type": "text_blocks"
+        "end_addr": "0x01432DBD",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01432DBE.txt",
         "start_addr": "0x01432DBE",
-        "end_addr": "0x01432E57",
-        "compressed_size": 154,
-        "decompressed_size": 205,
-        "type": "text_blocks"
+        "end_addr": "0x01432E5F",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01432E60.txt",
         "start_addr": "0x01432E60",
-        "end_addr": "0x01432E89",
-        "compressed_size": 42,
-        "decompressed_size": 51,
-        "type": "text_blocks"
+        "end_addr": "0x01432E91",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01432E92.txt",
         "start_addr": "0x01432E92",
-        "end_addr": "0x01432F53",
-        "compressed_size": 194,
-        "decompressed_size": 288,
-        "type": "text_blocks"
+        "end_addr": "0x01432F5B",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01432F5C.txt",
         "start_addr": "0x01432F5C",
-        "end_addr": "0x0143301F",
-        "compressed_size": 196,
-        "decompressed_size": 283,
-        "type": "text_blocks"
+        "end_addr": "0x01433027",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01433028.txt",
         "start_addr": "0x01433028",
-        "end_addr": "0x014330F5",
-        "compressed_size": 206,
-        "decompressed_size": 308,
-        "type": "text_blocks"
+        "end_addr": "0x014330FD",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x014330FE.txt",
         "start_addr": "0x014330FE",
-        "end_addr": "0x01433165",
-        "compressed_size": 104,
-        "decompressed_size": 119,
-        "type": "text_blocks"
+        "end_addr": "0x0143316D",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0143316E.txt",
         "start_addr": "0x0143316E",
-        "end_addr": "0x0143319B",
-        "compressed_size": 46,
-        "decompressed_size": 54,
-        "type": "text_blocks"
+        "end_addr": "0x014331A3",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x014331A4.txt",
         "start_addr": "0x014331A4",
-        "end_addr": "0x0143324F",
-        "compressed_size": 172,
-        "decompressed_size": 241,
-        "type": "text_blocks"
+        "end_addr": "0x01433257",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01433258.txt",
         "start_addr": "0x01433258",
-        "end_addr": "0x0143331F",
-        "compressed_size": 200,
-        "decompressed_size": 274,
-        "type": "text_blocks"
+        "end_addr": "0x01433327",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01433328.txt",
         "start_addr": "0x01433328",
-        "end_addr": "0x014333DF",
-        "compressed_size": 184,
-        "decompressed_size": 257,
-        "type": "text_blocks"
+        "end_addr": "0x014333E7",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x014333E8.txt",
         "start_addr": "0x014333E8",
-        "end_addr": "0x014334A5",
-        "compressed_size": 190,
-        "decompressed_size": 262,
-        "type": "text_blocks"
+        "end_addr": "0x014334AD",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x014334AE.txt",
         "start_addr": "0x014334AE",
-        "end_addr": "0x01433537",
-        "compressed_size": 138,
-        "decompressed_size": 180,
-        "type": "text_blocks"
+        "end_addr": "0x0143353F",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01433540.txt",
         "start_addr": "0x01433540",
-        "end_addr": "0x0143356B",
-        "compressed_size": 44,
-        "decompressed_size": 54,
-        "type": "text_blocks"
+        "end_addr": "0x01433573",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01433574.txt",
         "start_addr": "0x01433574",
-        "end_addr": "0x0143363D",
-        "compressed_size": 202,
-        "decompressed_size": 294,
-        "type": "text_blocks"
+        "end_addr": "0x01433645",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01433646.txt",
         "start_addr": "0x01433646",
-        "end_addr": "0x01433715",
-        "compressed_size": 208,
-        "decompressed_size": 313,
-        "type": "text_blocks"
+        "end_addr": "0x0143371D",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0143371E.txt",
         "start_addr": "0x0143371E",
-        "end_addr": "0x014337E9",
-        "compressed_size": 204,
-        "decompressed_size": 280,
-        "type": "text_blocks"
+        "end_addr": "0x014337F1",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x014337F2.txt",
         "start_addr": "0x014337F2",
-        "end_addr": "0x01433897",
-        "compressed_size": 166,
-        "decompressed_size": 227,
-        "type": "text_blocks"
+        "end_addr": "0x0143389F",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x014338A0.txt",
         "start_addr": "0x014338A0",
-        "end_addr": "0x014338C9",
-        "compressed_size": 42,
-        "decompressed_size": 52,
-        "type": "text_blocks"
+        "end_addr": "0x014338D1",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x014338D2.txt",
         "start_addr": "0x014338D2",
-        "end_addr": "0x01433989",
-        "compressed_size": 184,
-        "decompressed_size": 273,
-        "type": "text_blocks"
+        "end_addr": "0x01433991",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01433992.txt",
         "start_addr": "0x01433992",
-        "end_addr": "0x01433A33",
-        "compressed_size": 162,
-        "decompressed_size": 228,
-        "type": "text_blocks"
+        "end_addr": "0x01433A3B",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01433A3C.txt",
         "start_addr": "0x01433A3C",
-        "end_addr": "0x01433A83",
-        "compressed_size": 72,
-        "decompressed_size": 82,
-        "type": "text_blocks"
+        "end_addr": "0x01433A8B",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01433A8C.txt",
         "start_addr": "0x01433A8C",
-        "end_addr": "0x01433AB7",
-        "compressed_size": 44,
-        "decompressed_size": 55,
-        "type": "text_blocks"
+        "end_addr": "0x01433ABF",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01433AC0.txt",
         "start_addr": "0x01433AC0",
-        "end_addr": "0x01433B79",
-        "compressed_size": 186,
-        "decompressed_size": 281,
-        "type": "text_blocks"
+        "end_addr": "0x01433B81",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01433B82.txt",
         "start_addr": "0x01433B82",
-        "end_addr": "0x01433C53",
-        "compressed_size": 210,
-        "decompressed_size": 296,
-        "type": "text_blocks"
+        "end_addr": "0x01433C5B",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01433C5C.txt",
         "start_addr": "0x01433C5C",
-        "end_addr": "0x01433D21",
-        "compressed_size": 198,
-        "decompressed_size": 294,
-        "type": "text_blocks"
+        "end_addr": "0x01433D29",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01433D2A.txt",
         "start_addr": "0x01433D2A",
-        "end_addr": "0x01433DBF",
-        "compressed_size": 150,
-        "decompressed_size": 190,
-        "type": "text_blocks"
+        "end_addr": "0x01433DC7",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01433DC8.txt",
         "start_addr": "0x01433DC8",
-        "end_addr": "0x01433DF1",
-        "compressed_size": 42,
-        "decompressed_size": 52,
-        "type": "text_blocks"
+        "end_addr": "0x01433DF9",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01433DFA.txt",
         "start_addr": "0x01433DFA",
-        "end_addr": "0x01433EC1",
-        "compressed_size": 200,
-        "decompressed_size": 280,
-        "type": "text_blocks"
+        "end_addr": "0x01433EC9",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01433ECA.txt",
         "start_addr": "0x01433ECA",
-        "end_addr": "0x01433F63",
-        "compressed_size": 154,
-        "decompressed_size": 205,
-        "type": "text_blocks"
+        "end_addr": "0x01433F6B",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01433F6C.txt",
         "start_addr": "0x01433F6C",
-        "end_addr": "0x01433F97",
-        "compressed_size": 44,
-        "decompressed_size": 53,
-        "type": "text_blocks"
+        "end_addr": "0x01433F9F",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01433FA0.txt",
         "start_addr": "0x01433FA0",
-        "end_addr": "0x0143405B",
-        "compressed_size": 188,
-        "decompressed_size": 251,
-        "type": "text_blocks"
+        "end_addr": "0x01434063",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01434064.txt",
         "start_addr": "0x01434064",
-        "end_addr": "0x0143412D",
-        "compressed_size": 202,
-        "decompressed_size": 293,
-        "type": "text_blocks"
+        "end_addr": "0x01434135",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01434136.txt",
         "start_addr": "0x01434136",
-        "end_addr": "0x014341A9",
-        "compressed_size": 116,
-        "decompressed_size": 126,
-        "type": "text_blocks"
+        "end_addr": "0x014341B1",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x014341B2.txt",
         "start_addr": "0x014341B2",
-        "end_addr": "0x014341E1",
-        "compressed_size": 48,
-        "decompressed_size": 56,
-        "type": "text_blocks"
+        "end_addr": "0x014341E9",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x014341EA.txt",
         "start_addr": "0x014341EA",
-        "end_addr": "0x014342B5",
-        "compressed_size": 204,
-        "decompressed_size": 305,
-        "type": "text_blocks"
+        "end_addr": "0x014342BD",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x014342BE.txt",
         "start_addr": "0x014342BE",
-        "end_addr": "0x01434349",
-        "compressed_size": 140,
-        "decompressed_size": 183,
-        "type": "text_blocks"
+        "end_addr": "0x01434351",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01434352.txt",
         "start_addr": "0x01434352",
-        "end_addr": "0x01434383",
-        "compressed_size": 50,
-        "decompressed_size": 56,
-        "type": "text_blocks"
+        "end_addr": "0x0143438B",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0143438C.txt",
         "start_addr": "0x0143438C",
-        "end_addr": "0x01434463",
-        "compressed_size": 216,
-        "decompressed_size": 317,
-        "type": "text_blocks"
+        "end_addr": "0x0143446B",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0143446C.txt",
         "start_addr": "0x0143446C",
-        "end_addr": "0x01434527",
-        "compressed_size": 188,
-        "decompressed_size": 269,
-        "type": "text_blocks"
+        "end_addr": "0x0143452F",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "uncompressed_text_0x01434530.txt",
         "start_addr": "0x01434530",
-        "end_addr": "0x0143457B",
-        "size": 76,
+        "end_addr": "0x01434583",
         "type": "text_blocks",
-        "compression": "uncompressed"
+        "is_compressed": false
       },
       {
         "filename": "text_block_0x01434584.txt",
         "start_addr": "0x01434584",
-        "end_addr": "0x014345AF",
-        "compressed_size": 44,
-        "decompressed_size": 54,
-        "type": "text_blocks"
+        "end_addr": "0x014345B7",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x014345B8.txt",
         "start_addr": "0x014345B8",
-        "end_addr": "0x0143468D",
-        "compressed_size": 214,
-        "decompressed_size": 292,
-        "type": "text_blocks"
+        "end_addr": "0x01434695",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01434696.txt",
         "start_addr": "0x01434696",
-        "end_addr": "0x01434763",
-        "compressed_size": 206,
-        "decompressed_size": 304,
-        "type": "text_blocks"
+        "end_addr": "0x0143476B",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0143476C.txt",
         "start_addr": "0x0143476C",
-        "end_addr": "0x0143482D",
-        "compressed_size": 194,
-        "decompressed_size": 283,
-        "type": "text_blocks"
+        "end_addr": "0x01434835",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01434836.txt",
         "start_addr": "0x01434836",
-        "end_addr": "0x01434903",
-        "compressed_size": 206,
-        "decompressed_size": 287,
-        "type": "text_blocks"
+        "end_addr": "0x0143490B",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x0143490C.txt",
         "start_addr": "0x0143490C",
-        "end_addr": "0x014349CB",
-        "compressed_size": 192,
-        "decompressed_size": 285,
-        "type": "text_blocks"
+        "end_addr": "0x014349D3",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x014349D4.txt",
         "start_addr": "0x014349D4",
-        "end_addr": "0x01434A9F",
-        "compressed_size": 204,
-        "decompressed_size": 292,
-        "type": "text_blocks"
+        "end_addr": "0x01434AA7",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01434AA8.txt",
         "start_addr": "0x01434AA8",
-        "end_addr": "0x01434B53",
-        "compressed_size": 172,
-        "decompressed_size": 254,
-        "type": "text_blocks"
+        "end_addr": "0x01434B5B",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01434B5C.txt",
         "start_addr": "0x01434B5C",
-        "end_addr": "0x01434BC3",
-        "compressed_size": 104,
-        "decompressed_size": 117,
-        "type": "text_blocks"
+        "end_addr": "0x01434BCB",
+        "type": "text_blocks",
+        "is_compressed": true
+      },
+      {
+        "filename": "uncompressed_text_0x01434BCC.txt",
+        "start_addr": "0x01434BCC",
+        "end_addr": "0x01434BF9",
+        "type": "text_blocks",
+        "is_compressed": false
       },
       {
         "filename": "text_block_0x01434BFA.txt",
         "start_addr": "0x01434BFA",
-        "end_addr": "0x01434C5F",
-        "compressed_size": 102,
-        "decompressed_size": 102,
-        "type": "text_blocks"
+        "end_addr": "0x01434C67",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01434C68.txt",
         "start_addr": "0x01434C68",
-        "end_addr": "0x01434CE9",
-        "compressed_size": 130,
-        "decompressed_size": 157,
-        "type": "text_blocks"
+        "end_addr": "0x01434CF1",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01434CF2.txt",
         "start_addr": "0x01434CF2",
-        "end_addr": "0x01434D6F",
-        "compressed_size": 126,
-        "decompressed_size": 139,
-        "type": "text_blocks"
+        "end_addr": "0x01434D77",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01434D78.txt",
         "start_addr": "0x01434D78",
-        "end_addr": "0x01434E01",
-        "compressed_size": 138,
-        "decompressed_size": 162,
-        "type": "text_blocks"
+        "end_addr": "0x01434E09",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01434E0A.txt",
         "start_addr": "0x01434E0A",
-        "end_addr": "0x01434E61",
-        "compressed_size": 88,
-        "decompressed_size": 96,
-        "type": "text_blocks"
+        "end_addr": "0x01434E69",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01434E6A.txt",
         "start_addr": "0x01434E6A",
-        "end_addr": "0x01434E9D",
-        "compressed_size": 52,
-        "decompressed_size": 57,
-        "type": "text_blocks"
+        "end_addr": "0x01434EA5",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01434EA6.txt",
         "start_addr": "0x01434EA6",
-        "end_addr": "0x01434F71",
-        "compressed_size": 204,
-        "decompressed_size": 282,
-        "type": "text_blocks"
+        "end_addr": "0x01434F79",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01434F7A.txt",
         "start_addr": "0x01434F7A",
-        "end_addr": "0x01435049",
-        "compressed_size": 208,
-        "decompressed_size": 307,
-        "type": "text_blocks"
+        "end_addr": "0x01435051",
+        "type": "text_blocks",
+        "is_compressed": true
       },
       {
         "filename": "text_block_0x01435052.txt",
         "start_addr": "0x01435052",
-        "end_addr": "0x014350C3",
-        "compressed_size": 114,
-        "decompressed_size": 133,
-        "type": "text_blocks"
+        "end_addr": "0x014350CB",
+        "type": "text_blocks",
+        "is_compressed": true
       }
     ],
     "m2v_video": [
