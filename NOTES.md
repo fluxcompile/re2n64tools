@@ -4,19 +4,30 @@
 
 | Address Range         | Purpose                      |
 | --------------------- | ---------------------------- |
-| 0x00000000-0x000B628B | Code                         |
-| 0x000B628C-0x000D8323 | Unknown binary data          |
-| 0x000D8324-0x00338FE1 | Compressed data              |
-| 0x0034C18B–0x00B2C346 | Unknown binary data          |
-| 0x00B63106-0x00B73FB3 | Compressed data              |
+| 0x00000000-0x00012CDF | Code                         |
+| 0x00012CE0-0x0001310F | Table0 data addresses        |
+| 0x00013110-0x0001441F | Unknown data                 |
+| 0x00014420-0x0007260F | Table0 Compressed Block 0 (contains debug strings) |
+| 0x00072610-0x000B6247 | Table0 Compressed data blocks (possibly MIPS R4300i code) |
+| 0x000B6248-0x000C8623 | Table0 Uncompressed data blocks |
+| 0x000C8624-0x000C8653 | Unknown data (cotains a date string) | 
+| 0x000C8654-0x000D8323 | Table1 data addresses and sizes |
+| 0x000D8324-0x00338FE9 | Compressed data blocks       |
+| 0x00338FEA–0x00B63105 | Uncompressed data block (MORT blocks) |
+| 0x00B63106-0x00B73FB3 | Compressed data blocks       |
 | 0x00BF20FD-0x01350E80 | Unknown binary data          |
 | 0x01350E81-0x014030F6 | Uncompressed data            |
-| 0x0140ED84-0x0142CFE9 | Compressed data              |
-| 0x0142CFFE–0x014350CB | Text Strings                 |
-| 0x01440F38–0x02B7D8E9 | M2V Video Files              |
+| 0x0140ED84-0x0142CFF1 | Compressed data              |
+| 0x0142CFF2–0x014350CB | Text Strings (compressed and uncompressed) |
+| 0x014350CC-0x01440F37 | Unknown binary data          |
+| 0x01440F38–0x02B7D8E9 | M2V Video Files (uncompressed) |
 | 0x02B7D8EA-0x02BDEFB1 | Compressed Data              |
-| 0x02BDEFB2-0x03AF17FD | JPEG files                   |
-| 0x03AF17FE-0x03FD0DF5 | Compressed Data              |
+| 0x02BDEFB2-0x03AF17FD | JPEG files (uncompressed)    |
+| 0x03AF17FE-0x03B454EB | Compressed Data              |
+| 0x03B454EC-0x03B7E061 | Item images (compressed)     |
+| 0x03B7E062-0x03BBDE09 | Compressed Data              |
+| 0x03BBDE0A-0x03BC5771 | Map images (compressed)      |
+| 0x03BC5772-0x03FD0DF5 | Compressed Data              |
 | 0x03FD0DF6-0x03FFFFFF | Empty Data                   |
 
 ## File Formats
@@ -39,6 +50,81 @@ Each compressed text block follows this pattern:
 4. **Size field** (4 bytes, big-endian) - contains the decompressed size of the block
 
 The compressed blocks contain various types of text content. Some blocks also contain binary data (images, audio, etc.) which are dumped to separate files during extraction.
+
+## Table 0 — Block Entry Format
+
+**Range:** `0x00012CE0-0x0001310F`
+**Number of entries:** 67 (0 – 66)
+
+### Address Table Entry Structure
+
+| Offset | Size | Field | Description |
+|:-------|:-----|:------|:-------------|
+| 0x00 | 1 byte | **Tag (0xB0)** | Constant marker identifying a valid block descriptor. Every record begins with `B0`. |
+| 0x01 – 0x03 | 3 bytes | **ROM Start Address** | 24-bit (big-endian) offset into the ROM where the data block begins. |
+| 0x04 – 0x07 | 4 bytes | **Block Size** | Length in bytes to read from the ROM start address. May be compressed (if `0x68DE` marker present) or uncompressed data. |
+| 0x08 – 0x0B | 4 bytes | **Address A** | 32-bit value starting with `0x80xxxxxx` |
+| 0x0C – 0x0F | 4 bytes | **Address B** | 32-bit value starting with `0x80xxxxxx` |
+
+### Decompressed Block Contents
+
+- **Block 0:** Contains debug strings and system messages
+- **Blocks 1+:** Begin with `0x27BDFFE0` (MIPS function prologue: `addiu $sp, $sp, -32`)
+
+## Table 1 — Address Chain Format
+
+**Range:** `0x000C865C-0x000D8323`  
+**Structure:** 8-byte entries containing address/size pairs  
+**Pattern:** Sequential address chain with size-based offsets
+
+### Address Chain Entry Structure
+
+| Offset | Size | Field | Description |
+|:-------|:-----|:------|:-------------|
+| 0x00 – 0x03 | 4 bytes | **Next Address** | Target address for the next entry in the chain |
+| 0x04 – 0x07 | 4 bytes | **Size** | Length of data block at this address |
+
+### Address Chain Validation
+
+The chain follows a size-based offset pattern in most cases:
+- **Even size:** `next_address = current_address + size + 8`
+- **Odd size:** `next_address = current_address + size + 9`
+
+This pattern has been validated across thousands of entries in the chain, though it does not apply to all cases.
+
+## MORT Block Format
+
+**Range:** `0x00338FEA–0x00B63105`
+**Magic:** `"MORT"` (0x4D4F5254)
+
+### Address Table Discovery
+
+MORT blocks are discovered through an address table located at the beginning of uncompressed files:
+
+1. **Address Count:** First 4 bytes contain the number of addresses
+2. **Address Array:** Followed by an array of 4-byte addresses  
+3. **Address Extraction:** For each address, only the last 3 bytes are used as the target offset
+4. **Leftmost Byte Correlation:** The leftmost byte (byte 0) of each address correlates with MORT block type:
+   - **Leftmost = 0x00** → MORT blocks with bytes 6-7 = `0x1F40` (Type A)
+   - **Leftmost = 0x01** → MORT blocks with bytes 6-7 = `0x3E80` (Type B)
+5. **Block Extraction:** Blocks are extracted between consecutive addresses within the same file
+6. **MORT Detection:** Each extracted block is searched for the "MORT" magic string (0x4D4F5254)
+
+### MORT Block Header Structure
+
+| Offset | Size | Field | Description |
+|:-------|:-----|:------|:-------------|
+| 0x00 – 0x03 | 4 bytes | **Magic** | `"MORT"` identifier (0x4D4F5254) |
+| 0x04 – 0x05 | 2 bytes | **Unknown** | Purpose not yet determined |
+| 0x06 – 0x07 | 2 bytes | **Type/Version** | Block type indicator: `0x1F40` (Type A, 565 occurrences) or `0x3E80` (Type B, 23 occurrences) |
+| 0x08 – 0x0B | 4 bytes | **Entry Count** | Number of 4-byte entries in payload |
+| 0x0C – 0x0F | 4 bytes | **Unknown** | Purpose not yet determined |
+| 0x10+ | Variable | **Payload** | Array of 4-byte values (counted by entry count) |
+
+### Validation
+
+- **Entry Size:** `block_size / num_entries` should equal 4 bytes
+- **Structure:** All MORT blocks follow the same header format with variable payload length
 
 ## System / Debug Strings
 
