@@ -14,8 +14,8 @@
 | 0x000C8654-0x000D8323 | Table1 data addresses and sizes |
 | 0x000D8324-0x00338FE9 | Compressed data blocks       |
 | 0x00338FEA–0x00B63105 | Uncompressed data block (MORT blocks) |
-| 0x00B63106-0x00B73FB3 | Compressed data blocks       |
-| 0x00BF20FD-0x01350E80 | Unknown binary data          |
+| 0x00B63106-0x00B73FBB | Compressed data blocks       |
+| 0x00B73FBC-0x01350E80 | Unknown binary data          |
 | 0x01350E81-0x014030F6 | Uncompressed data            |
 | 0x0140ED84-0x0142CFF1 | Compressed data              |
 | 0x0142CFF2–0x014350CB | Text Strings (compressed and uncompressed) |
