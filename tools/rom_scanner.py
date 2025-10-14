@@ -28,6 +28,11 @@ class ScanResult:
 class ROMScanner:
     """Unified ROM scanner with CSV export."""
     
+    # File pattern signatures
+    COMPRESSED_HEADER = b'\x68\xDE'
+    COMPRESSED_TERMINATOR = b'\x00\x10\x00\x00'
+    UNCOMPRESSED_FOOTER = b'\x00\x01\x00\x00'
+    
     # Known large data regions to skip during scanning
     KNOWN_REGIONS = [
         (0x00338FEA, 0x00B63105), # MORT blocks
@@ -100,8 +105,8 @@ class ROMScanner:
                 i = self._skip_known_region(i)
                 continue
                 
-            # Look for compressed block header (68 DE)
-            if self.rom_data[i] == 0x68 and self.rom_data[i + 1] == 0xDE:
+            # Look for compressed block header
+            if self.rom_data[i:i + 2] == self.COMPRESSED_HEADER:
                 result = self._process_compressed_block(i, end_addr)
                 if result:
                     results.append(result)
@@ -126,8 +131,8 @@ class ROMScanner:
         
         print(f"  Found {len(gaps)} gaps to scan")
         
-        # Look for 00 01 00 00 footer pattern in gaps only
-        pattern = bytes([0x00, 0x01, 0x00, 0x00])
+        # Look for uncompressed file footer pattern in gaps only
+        pattern = self.UNCOMPRESSED_FOOTER
         
         for gap_start, gap_end in gaps:
             gap_size = gap_end - gap_start + 1
@@ -268,10 +273,9 @@ class ROMScanner:
             
     def _find_compressed_block_end(self, start_addr: int, max_end: int) -> Optional[int]:
         """Find the end of a compressed block."""
-        # Look for 00 10 00 00 terminator
+        # Look for compressed block terminator
         for offset in range(start_addr + 2, min(start_addr + 1000000, max_end - 7)):
-            if (self.rom_data[offset] == 0x00 and self.rom_data[offset + 1] == 0x10 and 
-                self.rom_data[offset + 2] == 0x00 and self.rom_data[offset + 3] == 0x00):
+            if self.rom_data[offset:offset + 4] == self.COMPRESSED_TERMINATOR:
                 return offset + 8  # Include terminator (4 bytes) + size field (4 bytes)
                 
         # If no terminator found, assume reasonable limit
@@ -372,35 +376,6 @@ class ROMScanner:
             'Decompressed Size': ""
         }
         
-    def export_to_csv(self):
-        """Export scan results to CSV file."""
-        csv_file = "rom_scan_results.csv"
-        
-        with open(csv_file, 'w', newline='', encoding='utf-8') as csvfile:
-            fieldnames = [
-                'Start Address', 'End Address', 'Compressed Size', 'Decompressed Size', 'File Type', 
-                'Known', 'Filename'
-            ]
-            
-            writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-            writer.writeheader()
-            
-            for result in self.results:
-                row = self._create_file_entry(result)
-                # Adjust field names for CSV export
-                csv_row = {
-                    'Start Address': row['Start Address'],
-                    'End Address': row['End Address'],
-                    'Compressed Size': row['Compressed Size'],
-                    'Decompressed Size': row['Decompressed Size'],
-                    'File Type': row['Subtype'],
-                    'Known': row['Known'],
-                    'Filename': row['Filename']
-                }
-                writer.writerow(csv_row)
-                
-        print(f"Results exported to CSV: {csv_file}")
-        
     def generate_rom_map(self, output_file: str = "rom_map.csv"):
         """Generate a complete ROM map showing all regions and gaps."""
         if not self.results:
@@ -475,26 +450,7 @@ class ROMScanner:
             for region in all_regions:
                 writer.writerow(region)
         
-        # Print summary
-        total_files = len([r for r in all_regions if r['Type'] == 'File'])
-        total_known_regions = len([r for r in all_regions if r['Type'] == 'Known Region'])
-        total_gaps = len(gaps)
-        
-        # Calculate sizes properly
-        discovered_files_size = sum(r['Size (bytes)'] for r in all_regions if r['Type'] == 'File')
-        known_regions_size = sum(r['Size (bytes)'] for r in all_regions if r['Type'] == 'Known Region')
-        total_mapped = discovered_files_size + known_regions_size
-        total_gap_size = rom_size - total_mapped
-        
         print(f"ROM map generated: {output_file}")
-        print(f"  Discovered files: {total_files}")
-        print(f"  Known regions: {total_known_regions}")
-        print(f"  Unmapped gaps: {total_gaps}")
-        print(f"  Discovered files size: {discovered_files_size:,} bytes ({discovered_files_size / (1024*1024):.1f} MB)")
-        print(f"  Known regions size: {known_regions_size:,} bytes ({known_regions_size / (1024*1024):.1f} MB)")
-        print(f"  Total mapped: {total_mapped:,} bytes ({total_mapped / (1024*1024):.1f} MB)")
-        print(f"  Unmapped gaps: {total_gap_size:,} bytes ({total_gap_size / (1024*1024):.1f} MB)")
-        print(f"  Coverage: {(total_mapped / rom_size) * 100:.1f}%")
 
 def main():
     """Main function."""
@@ -526,10 +482,7 @@ def main():
     all_results = compressed_results + uncompressed_results
     scanner.results = all_results
     
-    print(f"\n3. Exporting results...")
-    scanner.export_to_csv()
-    
-    print(f"\n4. Generating ROM map...")
+    print(f"\n3. Generating ROM map...")
     scanner.generate_rom_map()
         
     print(f"\n" + "="*60)
@@ -538,7 +491,6 @@ def main():
     print(f"Total files found: {len(all_results)}")
     print(f"  - Compressed blocks: {len(compressed_results)}")
     print(f"  - Uncompressed files: {len(uncompressed_results)}")
-    print(f"Results exported to: rom_scan_results.csv")
     print(f"ROM map exported to: rom_map.csv")
     print(f"Files extracted to: extracted_files/")
 

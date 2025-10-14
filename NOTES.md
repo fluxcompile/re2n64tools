@@ -126,6 +126,36 @@ MORT blocks are discovered through an address table located at the beginning of 
 - **Entry Size:** `block_size / num_entries` should equal 4 bytes
 - **Structure:** All MORT blocks follow the same header format with variable payload length
 
+## Table0 Compressed Block 0
+
+**ROM Range:** `0x00014420-0x0007260F` (Table0 Compressed Block 0)
+**RAM Range:** `0x80018A80-0x80136D90`
+
+| Address Range | Purpose |
+| ------------- | --------- |
+| 0x9E460-0x9F3D5 | Debug Strings |
+| 0x9F5D0-0x9FB25 | Debug Strings |
+| 0xA01B0-0xA0475 | Computer Registration Strings |
+| 0xA08C0-0xA0A42 | Debug Strings |
+| 0x118234-0x1182D3 | Unknown 32-bit addresses and numbers |
+| 0x1182D4-0x118373 | ECG_FINE curve |
+| 0x118374-0x118413 | ECG_YELLOW_CAUTION curve |
+| 0x118414-0x1184B3 | ECG_ORANGE_CAUTION curve |
+| 0x1184B4-0x118553 | ECG_DANGER curve |
+| 0x118554-0x1185F3 | ECG_POISON curve |
+| 0x118634-0x11867B | St_disp_num() N_pos (int16[18][2]) |
+| 0x1186DC-0x11870B | St_init_disp_face() Face_char_tbl (char[12][4]) |
+| 0x11892C-0x118947 | St_init_disp_itemlist() Itemlist_char_tbl (char[7][4]) |
+| 0x118948-0x118963 | St_disp_itemlist() Itemlist_pos_tbl (int16[7][2]) |
+| 0x118964-0x11897F | St_init_disp_equip() Equip_char_tb (char[7][4]) |
+| 0x118980-0x11899B | St_disp_equip() Equip_pos_tbl (int16[7][2]) |
+| 0x11899C-0x1189A1 | ECG_FINE color and gradient |
+| 0x1189A2-0x1189A7 | ECG_YELLOW_CAUTION color and gradient |
+| 0x1189A8-0x1189AD | ECG_ORANGE_CAUTION color and gradient |
+| 0x1189AE-0x1189B3 | ECG_DANGER color and gradient |
+| 0x1189B4-0x1189B9 | ECG_POISON color and gradient |
+| 0x1189BC-0x1189CF | ECG curve address table pointers (0x1182D4-0x1185F3) |
+
 ## System / Debug Strings
 
 These strings are not part of in-game text, but come from libraries, error handling, or ROM metadata.
