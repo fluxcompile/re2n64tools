@@ -21,16 +21,23 @@
 | 0x0142CFF2–0x014350CB | Text Strings (compressed and uncompressed) |
 | 0x014350CC-0x01440F37 | Unknown binary data          |
 | 0x01440F38–0x02B7D8E9 | M2V Video Files (uncompressed) |
-| 0x02B7D8EA-0x02BA25BD | Compressed Data              |
-| 0x02BA25BE-0x02BA7003 | RDT Init Scripts (compressed and uncompressed) |
-| 0x02BA7004-0x02BC3A7D | RDT Main Scripts (mostly compressed) |
+| 0x02B7D8EA-0x02B842C9 | Room Camera Positions (mostly compressed) |
+| 0x02B842CA-0x02B921AF | Room Camera Switches (compressed and uncompressed) |
+| 0x02B921B0-0x02B93F8D | Room Blocks Data (mostly uncompressed) |
+| 0x02B93F8E-0x02B9555D | Room Floor Data (mostly uncompressed) |
+| 0x02B9555E-0x02B99E27 | Room Light Data (mostly compressed) |
+| 0x02B99E28-0x02BA25BD | Room Collision Data (compressed) |
+| 0x02BA25BE-0x02BA7003 | Room Init Scripts (compressed and uncompressed) |
+| 0x02BA7004-0x02BC3A7D | Room Main Scripts (mostly compressed) |
 | 0x02BC3A7E-0x02BDEFB1 | Compressed Data              |
 | 0x02BDEFB2-0x03AF17FD | JPEG files (uncompressed)    |
 | 0x03AF17FE-0x03B454EB | Compressed Data              |
 | 0x03B454EC-0x03B7E061 | Item images (compressed)     |
 | 0x03B7E062-0x03BBDE09 | Compressed Data              |
 | 0x03BBDE0A-0x03BC5771 | Map images (compressed)      |
-| 0x03BC5772-0x03FD0DF5 | Compressed Data              |
+| 0x03BC5772-0x03F701EB | Compressed Data              |
+| 0x03F701EC-0x03F93A3F | Sprites (compressed)         |
+| 0x03F93A40-0x03FD0DF5 | Compressed Data              |
 | 0x03FD0DF6-0x03FFFFFF | Empty Data                   |
 
 ## File Formats
