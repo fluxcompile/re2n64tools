@@ -13726,6 +13726,1716 @@
         "format": "CI8",
         "is_compressed": true
       }
+    ],
+    "room_scripts": [
+      {
+        "filename": "room1000_init.scd",
+        "start_addr": "0x02BA25BE",
+        "end_addr": "0x02BA2767",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room1010_init.scd",
+        "start_addr": "0x02BA2768",
+        "end_addr": "0x02BA27B3",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room1020_init.scd",
+        "start_addr": "0x02BA27B4",
+        "end_addr": "0x02BA284F",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room1030_init.scd",
+        "start_addr": "0x02BA2850",
+        "end_addr": "0x02BA2911",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room1040_init.scd",
+        "start_addr": "0x02BA2912",
+        "end_addr": "0x02BA2A9D",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room1050_init.scd",
+        "start_addr": "0x02BA2A9E",
+        "end_addr": "0x02BA2AE9",
+        "type": "room_scripts",
+        "is_compressed": false
+      },
+      {
+        "filename": "room1060_init.scd",
+        "start_addr": "0x02BA2AEA",
+        "end_addr": "0x02BA2B35",
+        "type": "room_scripts",
+        "is_compressed": false
+      },
+      {
+        "filename": "room1070_init.scd",
+        "start_addr": "0x02BA2B36",
+        "end_addr": "0x02BA2C71",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room1080_init.scd",
+        "start_addr": "0x02BA2C72",
+        "end_addr": "0x02BA2CFB",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room1090_init.scd",
+        "start_addr": "0x02BA2CFC",
+        "end_addr": "0x02BA2DA7",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room10a0_init.scd",
+        "start_addr": "0x02BA2DA8",
+        "end_addr": "0x02BA2F6F",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room10b0_init.scd",
+        "start_addr": "0x02BA2F70",
+        "end_addr": "0x02BA30BF",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room10c0_init.scd",
+        "start_addr": "0x02BA30C0",
+        "end_addr": "0x02BA3129",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room10d0_init.scd",
+        "start_addr": "0x02BA312A",
+        "end_addr": "0x02BA3175",
+        "type": "room_scripts",
+        "is_compressed": false
+      },
+      {
+        "filename": "room10e0_init.scd",
+        "start_addr": "0x02BA3176",
+        "end_addr": "0x02BA31A1",
+        "type": "room_scripts",
+        "is_compressed": false
+      },
+      {
+        "filename": "room10f0_init.scd",
+        "start_addr": "0x02BA31A2",
+        "end_addr": "0x02BA327D",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room1100_init.scd",
+        "start_addr": "0x02BA327E",
+        "end_addr": "0x02BA344D",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room1120_init.scd",
+        "start_addr": "0x02BA3496",
+        "end_addr": "0x02BA3515",
+        "type": "room_scripts",
+        "is_compressed": false
+      },
+      {
+        "filename": "room1130_init.scd",
+        "start_addr": "0x02BA3516",
+        "end_addr": "0x02BA35BD",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room1140_init.scd",
+        "start_addr": "0x02BA35BE",
+        "end_addr": "0x02BA364B",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room1150_init.scd",
+        "start_addr": "0x02BA364C",
+        "end_addr": "0x02BA3713",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room1160_init.scd",
+        "start_addr": "0x02BA3714",
+        "end_addr": "0x02BA375F",
+        "type": "room_scripts",
+        "is_compressed": false
+      },
+      {
+        "filename": "room1170_init.scd",
+        "start_addr": "0x02BA3760",
+        "end_addr": "0x02BA37BF",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room1180_init.scd",
+        "start_addr": "0x02BA37C0",
+        "end_addr": "0x02BA3883",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room1190_init.scd",
+        "start_addr": "0x02BA3884",
+        "end_addr": "0x02BA38CF",
+        "type": "room_scripts",
+        "is_compressed": false
+      },
+      {
+        "filename": "room11a0_init.scd",
+        "start_addr": "0x02BA38D0",
+        "end_addr": "0x02BA3917",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room11b0_init.scd",
+        "start_addr": "0x02BA3918",
+        "end_addr": "0x02BA39E5",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room11c0_init.scd",
+        "start_addr": "0x02BA39E6",
+        "end_addr": "0x02BA3A31",
+        "type": "room_scripts",
+        "is_compressed": false
+      },
+      {
+        "filename": "room11d0_init.scd",
+        "start_addr": "0x02BA3A32",
+        "end_addr": "0x02BA3B27",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room2000_init.scd",
+        "start_addr": "0x02BA3B28",
+        "end_addr": "0x02BA3CB9",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room2010_init.scd",
+        "start_addr": "0x02BA3CBA",
+        "end_addr": "0x02BA3DCF",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room2020_init.scd",
+        "start_addr": "0x02BA3DD0",
+        "end_addr": "0x02BA3E29",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room2030_init.scd",
+        "start_addr": "0x02BA3E2A",
+        "end_addr": "0x02BA3F2B",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room2040_init.scd",
+        "start_addr": "0x02BA3F2C",
+        "end_addr": "0x02BA3FDD",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room2050_init.scd",
+        "start_addr": "0x02BA3FDE",
+        "end_addr": "0x02BA405F",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room2060_init.scd",
+        "start_addr": "0x02BA4060",
+        "end_addr": "0x02BA408B",
+        "type": "room_scripts",
+        "is_compressed": false
+      },
+      {
+        "filename": "room2070_init.scd",
+        "start_addr": "0x02BA408C",
+        "end_addr": "0x02BA41E9",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room2080_init.scd",
+        "start_addr": "0x02BA41EA",
+        "end_addr": "0x02BA428D",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room2090_init.scd",
+        "start_addr": "0x02BA428E",
+        "end_addr": "0x02BA438F",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room20a0_init.scd",
+        "start_addr": "0x02BA4390",
+        "end_addr": "0x02BA441B",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room20b0_init.scd",
+        "start_addr": "0x02BA441C",
+        "end_addr": "0x02BA4557",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room20c0_init.scd",
+        "start_addr": "0x02BA4558",
+        "end_addr": "0x02BA45DB",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room20d0_init.scd",
+        "start_addr": "0x02BA45DC",
+        "end_addr": "0x02BA4607",
+        "type": "room_scripts",
+        "is_compressed": false
+      },
+      {
+        "filename": "room20e0_init.scd",
+        "start_addr": "0x02BA4608",
+        "end_addr": "0x02BA4651",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room20f0_init.scd",
+        "start_addr": "0x02BA4652",
+        "end_addr": "0x02BA4767",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room2100_init.scd",
+        "start_addr": "0x02BA4768",
+        "end_addr": "0x02BA4793",
+        "type": "room_scripts",
+        "is_compressed": false
+      },
+      {
+        "filename": "room2110_init.scd",
+        "start_addr": "0x02BA4794",
+        "end_addr": "0x02BA4881",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room2120_init.scd",
+        "start_addr": "0x02BA4882",
+        "end_addr": "0x02BA493D",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room2130_init.scd",
+        "start_addr": "0x02BA493E",
+        "end_addr": "0x02BA4969",
+        "type": "room_scripts",
+        "is_compressed": false
+      },
+      {
+        "filename": "room2140_init.scd",
+        "start_addr": "0x02BA496A",
+        "end_addr": "0x02BA49B5",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room2150_init.scd",
+        "start_addr": "0x02BA49B6",
+        "end_addr": "0x02BA4B97",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room2160_init.scd",
+        "start_addr": "0x02BA4B98",
+        "end_addr": "0x02BA4C2D",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room2190_init.scd",
+        "start_addr": "0x02BA4C2E",
+        "end_addr": "0x02BA4CAF",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room21a0_init.scd",
+        "start_addr": "0x02BA4CB0",
+        "end_addr": "0x02BA4E8F",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room21b0_init.scd",
+        "start_addr": "0x02BA4E90",
+        "end_addr": "0x02BA4F21",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room3000_init.scd",
+        "start_addr": "0x02BA4F22",
+        "end_addr": "0x02BA4F6D",
+        "type": "room_scripts",
+        "is_compressed": false
+      },
+      {
+        "filename": "room3010_init.scd",
+        "start_addr": "0x02BA4F6E",
+        "end_addr": "0x02BA4F99",
+        "type": "room_scripts",
+        "is_compressed": false
+      },
+      {
+        "filename": "room3020_init.scd",
+        "start_addr": "0x02BA4F9A",
+        "end_addr": "0x02BA4FE1",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room3030_init.scd",
+        "start_addr": "0x02BA4FE2",
+        "end_addr": "0x02BA505F",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room3040_init.scd",
+        "start_addr": "0x02BA5060",
+        "end_addr": "0x02BA510D",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room3050_init.scd",
+        "start_addr": "0x02BA510E",
+        "end_addr": "0x02BA518F",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room3060_init.scd",
+        "start_addr": "0x02BA5190",
+        "end_addr": "0x02BA51BB",
+        "type": "room_scripts",
+        "is_compressed": false
+      },
+      {
+        "filename": "room3070_init.scd",
+        "start_addr": "0x02BA51BC",
+        "end_addr": "0x02BA5227",
+        "type": "room_scripts",
+        "is_compressed": false
+      },
+      {
+        "filename": "room3080_init.scd",
+        "start_addr": "0x02BA5228",
+        "end_addr": "0x02BA5273",
+        "type": "room_scripts",
+        "is_compressed": false
+      },
+      {
+        "filename": "room3090_init.scd",
+        "start_addr": "0x02BA5274",
+        "end_addr": "0x02BA52ED",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room30a0_init.scd",
+        "start_addr": "0x02BA52EE",
+        "end_addr": "0x02BA538F",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room30b0_init.scd",
+        "start_addr": "0x02BA5390",
+        "end_addr": "0x02BA542F",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room30c0_init.scd",
+        "start_addr": "0x02BA5430",
+        "end_addr": "0x02BA54D7",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room30d0_init.scd",
+        "start_addr": "0x02BA54D8",
+        "end_addr": "0x02BA5547",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room4000_init.scd",
+        "start_addr": "0x02BA5548",
+        "end_addr": "0x02BA55EB",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room4010_init.scd",
+        "start_addr": "0x02BA55EC",
+        "end_addr": "0x02BA56F1",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room4020_init.scd",
+        "start_addr": "0x02BA56F2",
+        "end_addr": "0x02BA573D",
+        "type": "room_scripts",
+        "is_compressed": false
+      },
+      {
+        "filename": "room4030_init.scd",
+        "start_addr": "0x02BA573E",
+        "end_addr": "0x02BA57F1",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room4040_init.scd",
+        "start_addr": "0x02BA57F2",
+        "end_addr": "0x02BA587B",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room4050_init.scd",
+        "start_addr": "0x02BA587C",
+        "end_addr": "0x02BA58E7",
+        "type": "room_scripts",
+        "is_compressed": false
+      },
+      {
+        "filename": "room4070_init.scd",
+        "start_addr": "0x02BA58E8",
+        "end_addr": "0x02BA5953",
+        "type": "room_scripts",
+        "is_compressed": false
+      },
+      {
+        "filename": "room4080_init.scd",
+        "start_addr": "0x02BA5954",
+        "end_addr": "0x02BA5A83",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room4090_init.scd",
+        "start_addr": "0x02BA5A84",
+        "end_addr": "0x02BA5B7B",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room40a0_init.scd",
+        "start_addr": "0x02BA5B7C",
+        "end_addr": "0x02BA5C2B",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room40b0_init.scd",
+        "start_addr": "0x02BA5C2C",
+        "end_addr": "0x02BA5CEF",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room40c0_init.scd",
+        "start_addr": "0x02BA5CF0",
+        "end_addr": "0x02BA5D3B",
+        "type": "room_scripts",
+        "is_compressed": false
+      },
+      {
+        "filename": "room40d0_init.scd",
+        "start_addr": "0x02BA5D3C",
+        "end_addr": "0x02BA5D87",
+        "type": "room_scripts",
+        "is_compressed": false
+      },
+      {
+        "filename": "room40e0_init.scd",
+        "start_addr": "0x02BA5D88",
+        "end_addr": "0x02BA5E13",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room40f0_init.scd",
+        "start_addr": "0x02BA5E14",
+        "end_addr": "0x02BA5EB7",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room4100_init.scd",
+        "start_addr": "0x02BA5EB8",
+        "end_addr": "0x02BA5F03",
+        "type": "room_scripts",
+        "is_compressed": false
+      },
+      {
+        "filename": "room5000_init.scd",
+        "start_addr": "0x02BA5F04",
+        "end_addr": "0x02BA5F33",
+        "type": "room_scripts",
+        "is_compressed": false
+      },
+      {
+        "filename": "room5010_init.scd",
+        "start_addr": "0x02BA5F34",
+        "end_addr": "0x02BA5F8D",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room5020_init.scd",
+        "start_addr": "0x02BA5F8E",
+        "end_addr": "0x02BA603B",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room5030_init.scd",
+        "start_addr": "0x02BA603C",
+        "end_addr": "0x02BA60F7",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room5040_init.scd",
+        "start_addr": "0x02BA60F8",
+        "end_addr": "0x02BA6143",
+        "type": "room_scripts",
+        "is_compressed": false
+      },
+      {
+        "filename": "room5050_init.scd",
+        "start_addr": "0x02BA6144",
+        "end_addr": "0x02BA61D7",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room5060_init.scd",
+        "start_addr": "0x02BA61D8",
+        "end_addr": "0x02BA6223",
+        "type": "room_scripts",
+        "is_compressed": false
+      },
+      {
+        "filename": "room5070_init.scd",
+        "start_addr": "0x02BA6224",
+        "end_addr": "0x02BA624F",
+        "type": "room_scripts",
+        "is_compressed": false
+      },
+      {
+        "filename": "room5080_init.scd",
+        "start_addr": "0x02BA6250",
+        "end_addr": "0x02BA632D",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room5090_init.scd",
+        "start_addr": "0x02BA632E",
+        "end_addr": "0x02BA6359",
+        "type": "room_scripts",
+        "is_compressed": false
+      },
+      {
+        "filename": "room6000_init.scd",
+        "start_addr": "0x02BA635A",
+        "end_addr": "0x02BA63A5",
+        "type": "room_scripts",
+        "is_compressed": false
+      },
+      {
+        "filename": "room6010_init.scd",
+        "start_addr": "0x02BA63A6",
+        "end_addr": "0x02BA63F7",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room6020_init.scd",
+        "start_addr": "0x02BA63F8",
+        "end_addr": "0x02BA6487",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room6030_init.scd",
+        "start_addr": "0x02BA6488",
+        "end_addr": "0x02BA64ED",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room6040_init.scd",
+        "start_addr": "0x02BA64EE",
+        "end_addr": "0x02BA6567",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room6050_init.scd",
+        "start_addr": "0x02BA6568",
+        "end_addr": "0x02BA6651",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room6060_init.scd",
+        "start_addr": "0x02BA6652",
+        "end_addr": "0x02BA66FB",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room6070_init.scd",
+        "start_addr": "0x02BA66FC",
+        "end_addr": "0x02BA6781",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room6080_init.scd",
+        "start_addr": "0x02BA6782",
+        "end_addr": "0x02BA682D",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room6090_init.scd",
+        "start_addr": "0x02BA682E",
+        "end_addr": "0x02BA689D",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room60a0_init.scd",
+        "start_addr": "0x02BA689E",
+        "end_addr": "0x02BA6925",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room60b0_init.scd",
+        "start_addr": "0x02BA6926",
+        "end_addr": "0x02BA69BF",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room60c0_init.scd",
+        "start_addr": "0x02BA69C0",
+        "end_addr": "0x02BA6A7F",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room60d0_init.scd",
+        "start_addr": "0x02BA6A80",
+        "end_addr": "0x02BA6AAB",
+        "type": "room_scripts",
+        "is_compressed": false
+      },
+      {
+        "filename": "room60e0_init.scd",
+        "start_addr": "0x02BA6AAC",
+        "end_addr": "0x02BA6B2B",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room60f0_init.scd",
+        "start_addr": "0x02BA6B2C",
+        "end_addr": "0x02BA6B57",
+        "type": "room_scripts",
+        "is_compressed": false
+      },
+      {
+        "filename": "room6100_init.scd",
+        "start_addr": "0x02BA6B58",
+        "end_addr": "0x02BA6BB3",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room6110_init.scd",
+        "start_addr": "0x02BA6BB4",
+        "end_addr": "0x02BA6C3D",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room6120_init.scd",
+        "start_addr": "0x02BA6C3E",
+        "end_addr": "0x02BA6C89",
+        "type": "room_scripts",
+        "is_compressed": false
+      },
+      {
+        "filename": "room6130_init.scd",
+        "start_addr": "0x02BA6C8A",
+        "end_addr": "0x02BA6CF9",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room6140_init.scd",
+        "start_addr": "0x02BA6CFA",
+        "end_addr": "0x02BA6D63",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room6150_init.scd",
+        "start_addr": "0x02BA6D64",
+        "end_addr": "0x02BA6D8F",
+        "type": "room_scripts",
+        "is_compressed": false
+      },
+      {
+        "filename": "room6160_init.scd",
+        "start_addr": "0x02BA6D90",
+        "end_addr": "0x02BA6DF9",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room6170_init.scd",
+        "start_addr": "0x02BA6DFA",
+        "end_addr": "0x02BA6E45",
+        "type": "room_scripts",
+        "is_compressed": false
+      },
+      {
+        "filename": "room7000_init.scd",
+        "start_addr": "0x02BA6E46",
+        "end_addr": "0x02BA6E91",
+        "type": "room_scripts",
+        "is_compressed": false
+      },
+      {
+        "filename": "room7010_init.scd",
+        "start_addr": "0x02BA6E92",
+        "end_addr": "0x02BA6EDD",
+        "type": "room_scripts",
+        "is_compressed": false
+      },
+      {
+        "filename": "room7020_init.scd",
+        "start_addr": "0x02BA6EDE",
+        "end_addr": "0x02BA6F09",
+        "type": "room_scripts",
+        "is_compressed": false
+      },
+      {
+        "filename": "room7030_init.scd",
+        "start_addr": "0x02BA6F0A",
+        "end_addr": "0x02BA6FD7",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room7040_init.scd",
+        "start_addr": "0x02BA6FD8",
+        "end_addr": "0x02BA7003",
+        "type": "room_scripts",
+        "is_compressed": false
+      },
+      {
+        "filename": "room1000_main.scd",
+        "start_addr": "0x02BA7004",
+        "end_addr": "0x02BA730F",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room1010_main.scd",
+        "start_addr": "0x02BA7310",
+        "end_addr": "0x02BA7BE7",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room1020_main.scd",
+        "start_addr": "0x02BA7BE8",
+        "end_addr": "0x02BA7F2F",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room1030_main.scd",
+        "start_addr": "0x02BA7F30",
+        "end_addr": "0x02BA83D5",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room1040_main.scd",
+        "start_addr": "0x02BA83D6",
+        "end_addr": "0x02BA8659",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room1050_main.scd",
+        "start_addr": "0x02BA865A",
+        "end_addr": "0x02BA87CB",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room1060_main.scd",
+        "start_addr": "0x02BA87CC",
+        "end_addr": "0x02BA8B95",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room1070_main.scd",
+        "start_addr": "0x02BA8B96",
+        "end_addr": "0x02BA8BA5",
+        "type": "room_scripts",
+        "is_compressed": false
+      },
+      {
+        "filename": "room1080_main.scd",
+        "start_addr": "0x02BA8BA6",
+        "end_addr": "0x02BA91CB",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room1090_main.scd",
+        "start_addr": "0x02BA91CC",
+        "end_addr": "0x02BA9A39",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room10a0_main.scd",
+        "start_addr": "0x02BA9A3A",
+        "end_addr": "0x02BA9BBD",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room10b0_main.scd",
+        "start_addr": "0x02BA9BBE",
+        "end_addr": "0x02BAA247",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room10c0_main.scd",
+        "start_addr": "0x02BAA248",
+        "end_addr": "0x02BAA44B",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room10d0_main.scd",
+        "start_addr": "0x02BAA44C",
+        "end_addr": "0x02BAA53B",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room10e0_main.scd",
+        "start_addr": "0x02BAA53C",
+        "end_addr": "0x02BAA60F",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room10f0_main.scd",
+        "start_addr": "0x02BAA610",
+        "end_addr": "0x02BAA741",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room1100_main.scd",
+        "start_addr": "0x02BAA742",
+        "end_addr": "0x02BAA9E9",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room1110_main.scd",
+        "start_addr": "0x02BAA9EA",
+        "end_addr": "0x02BAB0C3",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room1120_main.scd",
+        "start_addr": "0x02BAB0C4",
+        "end_addr": "0x02BABD0F",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room1130_main.scd",
+        "start_addr": "0x02BABD10",
+        "end_addr": "0x02BAC5AB",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room1140_main.scd",
+        "start_addr": "0x02BAC5AC",
+        "end_addr": "0x02BAC83D",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room1150_main.scd",
+        "start_addr": "0x02BAC83E",
+        "end_addr": "0x02BACF05",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room1160_main.scd",
+        "start_addr": "0x02BACF06",
+        "end_addr": "0x02BAD009",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room1180_main.scd",
+        "start_addr": "0x02BAD00A",
+        "end_addr": "0x02BAD08F",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room1190_main.scd",
+        "start_addr": "0x02BAD090",
+        "end_addr": "0x02BAD21B",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room11a0_main.scd",
+        "start_addr": "0x02BAD21C",
+        "end_addr": "0x02BAD2C1",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room11b0_main.scd",
+        "start_addr": "0x02BAD2C2",
+        "end_addr": "0x02BAD3FB",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room11c0_main.scd",
+        "start_addr": "0x02BAD3FC",
+        "end_addr": "0x02BAD725",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room11d0_main.scd",
+        "start_addr": "0x02BAD726",
+        "end_addr": "0x02BADA5F",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room2000_main.scd",
+        "start_addr": "0x02BADA60",
+        "end_addr": "0x02BADE55",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room2010_main.scd",
+        "start_addr": "0x02BADE56",
+        "end_addr": "0x02BAE0C7",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room2020_main.scd",
+        "start_addr": "0x02BAE0C8",
+        "end_addr": "0x02BAE5CD",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room2030_main.scd",
+        "start_addr": "0x02BAE5CE",
+        "end_addr": "0x02BAE661",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room2040_main.scd",
+        "start_addr": "0x02BAE662",
+        "end_addr": "0x02BAEC47",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room2050_main.scd",
+        "start_addr": "0x02BAEC48",
+        "end_addr": "0x02BAF077",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room2060_main.scd",
+        "start_addr": "0x02BAF078",
+        "end_addr": "0x02BAF40B",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room2070_main.scd",
+        "start_addr": "0x02BAF40C",
+        "end_addr": "0x02BAF563",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room2080_main.scd",
+        "start_addr": "0x02BAF564",
+        "end_addr": "0x02BAF8AB",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room2090_main.scd",
+        "start_addr": "0x02BAF8AC",
+        "end_addr": "0x02BAF9F1",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room20a0_main.scd",
+        "start_addr": "0x02BAF9F2",
+        "end_addr": "0x02BAFB95",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room20b0_main.scd",
+        "start_addr": "0x02BAFB96",
+        "end_addr": "0x02BAFFC5",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room20c0_main.scd",
+        "start_addr": "0x02BAFFC6",
+        "end_addr": "0x02BB0251",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room20d0_main.scd",
+        "start_addr": "0x02BB0252",
+        "end_addr": "0x02BB0715",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room20e0_main.scd",
+        "start_addr": "0x02BB0716",
+        "end_addr": "0x02BB0ABB",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room20f0_main.scd",
+        "start_addr": "0x02BB0ABC",
+        "end_addr": "0x02BB0E87",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room2100_main.scd",
+        "start_addr": "0x02BB0E88",
+        "end_addr": "0x02BB1009",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room2110_main.scd",
+        "start_addr": "0x02BB100A",
+        "end_addr": "0x02BB137B",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room2120_main.scd",
+        "start_addr": "0x02BB137C",
+        "end_addr": "0x02BB14D3",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room2130_main.scd",
+        "start_addr": "0x02BB14D4",
+        "end_addr": "0x02BB183F",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room2140_main.scd",
+        "start_addr": "0x02BB1840",
+        "end_addr": "0x02BB1A2F",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room2150_main.scd",
+        "start_addr": "0x02BB1A30",
+        "end_addr": "0x02BB1CA5",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room2160_main.scd",
+        "start_addr": "0x02BB1CA6",
+        "end_addr": "0x02BB2353",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room2190_main.scd",
+        "start_addr": "0x02BB2354",
+        "end_addr": "0x02BB28B5",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room21a0_main.scd",
+        "start_addr": "0x02BB28B6",
+        "end_addr": "0x02BB2DB1",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room21b0_main.scd",
+        "start_addr": "0x02BB2DB2",
+        "end_addr": "0x02BB2F4D",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room3000_main.scd",
+        "start_addr": "0x02BB2F4E",
+        "end_addr": "0x02BB306B",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room3010_main.scd",
+        "start_addr": "0x02BB306C",
+        "end_addr": "0x02BB3983",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room3020_main.scd",
+        "start_addr": "0x02BB3984",
+        "end_addr": "0x02BB3AC9",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room3030_main.scd",
+        "start_addr": "0x02BB3ACA",
+        "end_addr": "0x02BB3FF7",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room3040_main.scd",
+        "start_addr": "0x02BB3FF8",
+        "end_addr": "0x02BB462D",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room3050_main.scd",
+        "start_addr": "0x02BB462E",
+        "end_addr": "0x02BB480F",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room3060_main.scd",
+        "start_addr": "0x02BB4810",
+        "end_addr": "0x02BB4DBF",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room3070_main.scd",
+        "start_addr": "0x02BB4DC0",
+        "end_addr": "0x02BB4F2D",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room3080_main.scd",
+        "start_addr": "0x02BB4F2E",
+        "end_addr": "0x02BB4FEF",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room3090_main.scd",
+        "start_addr": "0x02BB4FF0",
+        "end_addr": "0x02BB507F",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room30a0_main.scd",
+        "start_addr": "0x02BB5080",
+        "end_addr": "0x02BB512B",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room30b0_main.scd",
+        "start_addr": "0x02BB512C",
+        "end_addr": "0x02BB5841",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room30c0_main.scd",
+        "start_addr": "0x02BB5842",
+        "end_addr": "0x02BB58BB",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room4000_main.scd",
+        "start_addr": "0x02BB58BC",
+        "end_addr": "0x02BB5AEF",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room4010_main.scd",
+        "start_addr": "0x02BB5AF0",
+        "end_addr": "0x02BB5FBB",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room4020_main.scd",
+        "start_addr": "0x02BB5FBC",
+        "end_addr": "0x02BB614D",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room4030_main.scd",
+        "start_addr": "0x02BB614E",
+        "end_addr": "0x02BB6889",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room4040_main.scd",
+        "start_addr": "0x02BB688A",
+        "end_addr": "0x02BB6D9F",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room4050_main.scd",
+        "start_addr": "0x02BB6DA0",
+        "end_addr": "0x02BB71CD",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room4070_main.scd",
+        "start_addr": "0x02BB71CE",
+        "end_addr": "0x02BB7523",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room4080_main.scd",
+        "start_addr": "0x02BB7524",
+        "end_addr": "0x02BB7AA5",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room4090_main.scd",
+        "start_addr": "0x02BB7AA6",
+        "end_addr": "0x02BB84F9",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room40a0_main.scd",
+        "start_addr": "0x02BB84FA",
+        "end_addr": "0x02BB8C9B",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room40b0_main.scd",
+        "start_addr": "0x02BB8C9C",
+        "end_addr": "0x02BB8D99",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room40d0_main.scd",
+        "start_addr": "0x02BB8D9A",
+        "end_addr": "0x02BB8EA1",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room40e0_main.scd",
+        "start_addr": "0x02BB8EA2",
+        "end_addr": "0x02BB9375",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room4100_main.scd",
+        "start_addr": "0x02BB9376",
+        "end_addr": "0x02BB98F5",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room5000_main.scd",
+        "start_addr": "0x02BB98F6",
+        "end_addr": "0x02BBA16B",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room5010_main.scd",
+        "start_addr": "0x02BBA16C",
+        "end_addr": "0x02BBA471",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room5020_main.scd",
+        "start_addr": "0x02BBA472",
+        "end_addr": "0x02BBA509",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room5030_main.scd",
+        "start_addr": "0x02BBA50A",
+        "end_addr": "0x02BBA8CB",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room5040_main.scd",
+        "start_addr": "0x02BBA8CC",
+        "end_addr": "0x02BBABC3",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room5050_main.scd",
+        "start_addr": "0x02BBABC4",
+        "end_addr": "0x02BBB3F3",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room5060_main.scd",
+        "start_addr": "0x02BBB3F4",
+        "end_addr": "0x02BBB5AD",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room5070_main.scd",
+        "start_addr": "0x02BBB5AE",
+        "end_addr": "0x02BBB913",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room5080_main.scd",
+        "start_addr": "0x02BBB914",
+        "end_addr": "0x02BBB9F3",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room5090_main.scd",
+        "start_addr": "0x02BBB9F4",
+        "end_addr": "0x02BBC073",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room6010_main.scd",
+        "start_addr": "0x02BBC074",
+        "end_addr": "0x02BBC5B5",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room6020_main.scd",
+        "start_addr": "0x02BBC5B6",
+        "end_addr": "0x02BBCE11",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room6030_main.scd",
+        "start_addr": "0x02BBCE12",
+        "end_addr": "0x02BBD509",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room6040_main.scd",
+        "start_addr": "0x02BBD50A",
+        "end_addr": "0x02BBE31F",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room6050_main.scd",
+        "start_addr": "0x02BBE320",
+        "end_addr": "0x02BBE55D",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room6060_main.scd",
+        "start_addr": "0x02BBE55E",
+        "end_addr": "0x02BBE63F",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room6070_main.scd",
+        "start_addr": "0x02BBE640",
+        "end_addr": "0x02BBEA25",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room6080_main.scd",
+        "start_addr": "0x02BBEA26",
+        "end_addr": "0x02BBEBCF",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room6090_main.scd",
+        "start_addr": "0x02BBEBD0",
+        "end_addr": "0x02BBED35",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room60a0_main.scd",
+        "start_addr": "0x02BBED36",
+        "end_addr": "0x02BBF4CF",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room60b0_main.scd",
+        "start_addr": "0x02BBF4D0",
+        "end_addr": "0x02BBF7F1",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room60c0_main.scd",
+        "start_addr": "0x02BBF7F2",
+        "end_addr": "0x02BBFFFF",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room60d0_main.scd",
+        "start_addr": "0x02BC0000",
+        "end_addr": "0x02BC0293",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room60e0_main.scd",
+        "start_addr": "0x02BC0294",
+        "end_addr": "0x02BC04F5",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room60f0_main.scd",
+        "start_addr": "0x02BC04F6",
+        "end_addr": "0x02BC066D",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room6100_main.scd",
+        "start_addr": "0x02BC066E",
+        "end_addr": "0x02BC0929",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room6110_main.scd",
+        "start_addr": "0x02BC092A",
+        "end_addr": "0x02BC1035",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room6120_main.scd",
+        "start_addr": "0x02BC1036",
+        "end_addr": "0x02BC11C5",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room6130_main.scd",
+        "start_addr": "0x02BC11C6",
+        "end_addr": "0x02BC1337",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room6140_main.scd",
+        "start_addr": "0x02BC1338",
+        "end_addr": "0x02BC13BF",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room6150_main.scd",
+        "start_addr": "0x02BC13C0",
+        "end_addr": "0x02BC179B",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room6160_main.scd",
+        "start_addr": "0x02BC179C",
+        "end_addr": "0x02BC1B39",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room6170_main.scd",
+        "start_addr": "0x02BC1B3A",
+        "end_addr": "0x02BC219F",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room7000_main.scd",
+        "start_addr": "0x02BC21A0",
+        "end_addr": "0x02BC24A3",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room7010_main.scd",
+        "start_addr": "0x02BC24A4",
+        "end_addr": "0x02BC2733",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room7020_main.scd",
+        "start_addr": "0x02BC2734",
+        "end_addr": "0x02BC2CF1",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room7030_main.scd",
+        "start_addr": "0x02BC2CF2",
+        "end_addr": "0x02BC3513",
+        "type": "room_scripts",
+        "is_compressed": true
+      },
+      {
+        "filename": "room7040_main.scd",
+        "start_addr": "0x02BC3514",
+        "end_addr": "0x02BC3A7D",
+        "type": "room_scripts",
+        "is_compressed": false
+      }
     ]
   }
 }

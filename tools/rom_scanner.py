@@ -12,7 +12,6 @@ import os
 import zlib
 from typing import List, Dict, Optional, Tuple
 from dataclasses import dataclass
-from datetime import datetime
 
 @dataclass
 class ScanResult:
@@ -306,12 +305,22 @@ class ROMScanner:
             known_regions.append((result.start_addr, result.end_addr))
         
         # Add regions from file table
+        # IMPORTANT: Do NOT add known UNCOMPRESSED regions here so they remain
+        # eligible for uncompressed scanning (they should be treated like gaps).
         if self.file_table:
             files_by_type = self.file_table.get('files', {})
             for file_type, files in files_by_type.items():
                 for file_info in files:
-                    file_start = int(file_info['start_addr'], 16)
-                    file_end = int(file_info['end_addr'], 16)
+                    try:
+                        file_start = int(file_info['start_addr'], 16)
+                        file_end = int(file_info['end_addr'], 16)
+                    except Exception:
+                        continue
+                    is_compressed_flag = file_info.get('is_compressed', None)
+                    # Only add as known (to skip) if compressed or unknown; leave explicit False (uncompressed) out
+                    if is_compressed_flag is False:
+                        # known uncompressed -> let scanner process it as a candidate by leaving it out of known regions
+                        continue
                     known_regions.append((file_start, file_end))
         
         # Add known large data regions

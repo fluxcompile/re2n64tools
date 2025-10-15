@@ -21,7 +21,10 @@
 | 0x0142CFF2–0x014350CB | Text Strings (compressed and uncompressed) |
 | 0x014350CC-0x01440F37 | Unknown binary data          |
 | 0x01440F38–0x02B7D8E9 | M2V Video Files (uncompressed) |
-| 0x02B7D8EA-0x02BDEFB1 | Compressed Data              |
+| 0x02B7D8EA-0x02BA25BD | Compressed Data              |
+| 0x02BA25BE-0x02BA7003 | RDT Init Scripts (compressed and uncompressed) |
+| 0x02BA7004-0x02BC3A7D | RDT Main Scripts (mostly compressed) |
+| 0x02BC3A7E-0x02BDEFB1 | Compressed Data              |
 | 0x02BDEFB2-0x03AF17FD | JPEG files (uncompressed)    |
 | 0x03AF17FE-0x03B454EB | Compressed Data              |
 | 0x03B454EC-0x03B7E061 | Item images (compressed)     |
@@ -133,8 +136,10 @@ MORT blocks are discovered through an address table located at the beginning of 
 
 | Address Range | Purpose |
 | ------------- | --------- |
-| 0x9E460-0x9F3D5 | Debug Strings |
-| 0x9F5D0-0x9FB25 | Debug Strings |
+| 0x9E460-0x9F3D7 | Debug Strings |
+| 0x9F3D8-0x9F58F | Address references to debug strings (0x9E460-0x9F3D5) |
+| 0x9F5D0-0x9FB2B | Image Debug Strings |
+| 0x9FB2C-0x9FBD3 | Address references to debug strings (0x9F5D0-0x9FB25) |
 | 0xA01B0-0xA0475 | Computer Registration Strings |
 | 0xA08C0-0xA0A42 | Debug Strings |
 | 0x118234-0x1182D3 | Unknown 32-bit addresses and numbers |
@@ -145,6 +150,7 @@ MORT blocks are discovered through an address table located at the beginning of 
 | 0x118554-0x1185F3 | ECG_POISON curve |
 | 0x118634-0x11867B | St_disp_num() N_pos (int16[18][2]) |
 | 0x1186DC-0x11870B | St_init_disp_face() Face_char_tbl (char[12][4]) |
+| 0x118710-0x118738 | St_init_disp_face() Face_subchar_tbl (char[10][4]) |
 | 0x11892C-0x118947 | St_init_disp_itemlist() Itemlist_char_tbl (char[7][4]) |
 | 0x118948-0x118963 | St_disp_itemlist() Itemlist_pos_tbl (int16[7][2]) |
 | 0x118964-0x11897F | St_init_disp_equip() Equip_char_tb (char[7][4]) |
