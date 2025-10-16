@@ -29,15 +29,18 @@
 | 0x02B99E28-0x02BA25BD | Room Collision Data (compressed) |
 | 0x02BA25BE-0x02BA7003 | Room Init Scripts (compressed and uncompressed) |
 | 0x02BA7004-0x02BC3A7D | Room Main Scripts (mostly compressed) |
-| 0x02BC3A7E-0x02BDEFB1 | Compressed Data              |
+| 0x02BC3A7E-0x02BD87A9 | Compressed Data              |
+| 0x02BD87AA-0x02BDDF7B | Room Messages (mostly compressed) |
+| 0x02BDDF7C-0x02BDEFB1 | Compressed Data              |
 | 0x02BDEFB2-0x03AF17FD | JPEG files (uncompressed)    |
 | 0x03AF17FE-0x03B454EB | Compressed Data              |
 | 0x03B454EC-0x03B7E061 | Item images (compressed)     |
 | 0x03B7E062-0x03BBDE09 | Compressed Data              |
 | 0x03BBDE0A-0x03BC5771 | Map images (compressed)      |
 | 0x03BC5772-0x03F701EB | Compressed Data              |
-| 0x03F701EC-0x03F93A3F | Sprites (compressed)         |
-| 0x03F93A40-0x03FD0DF5 | Compressed Data              |
+| 0x03F701EC-0x03F93A3F | Sprite images (compressed)   |
+| 0x03F93A40-0x03F95E3F | Room Sprites (compressed)    |
+| 0x03F95E40-0x03FD0DF5 | Compressed Data              |
 | 0x03FD0DF6-0x03FFFFFF | Empty Data                   |
 
 ## File Formats
